@@ -1,0 +1,54 @@
+@import '~bootstrap/scss/bootstrap';
+@import "../../public/assets/scss/main";
+@import "../../node_modules/react-accessible-accordion/dist/fancy-example.css";
+
+#services {
+    padding: 100px 0;
+    background: linear-gradient(to right, #a2d5d8 0%, #d3c199 100%);
+    color: #fff;
+  }
+  #services .service-desc {
+    margin: 10px 10px 20px;
+  }
+  #services h2 {
+    color: #fff;
+  }
+  #services .section-title h2::after {
+    position: absolute;
+    content: "";
+    background: rgba(255, 255, 255, 0.3);
+    height: 4px;
+    width: 60px;
+    bottom: 0;
+    margin-left: -30px;
+    left: 50%;
+  }
+  #services i.fa {
+    font-size: 42px;
+    width: 120px;
+    height: 120px;
+    padding: 40px 0;     
+    color: #fff;
+  }
+  #services h3 {
+    font-weight: 500;
+    padding: 5px 0;
+    color: #000;
+    font-weight: bold;
+  }
+  #services p {
+    color: #000;
+    font-size: 20px;
+  }
+  #services .service-desc {
+    margin-bottom: 40px;
+  }
+
+#lista {
+  list-style: none;
+}
+
+.imgfurgo {
+  height: 200px;
+ 
+}

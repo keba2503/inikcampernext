@@ -1,0 +1,185 @@
+{
+  "Header": {
+    "title": "Crearemos experiencias a tu medida.",
+    "paragraph": ""
+  },
+  "About": {
+    "paragraph": "",
+    "Why": [
+      "Somos una desconexión de la vida diaria para los apasionados de la libertad. ",
+      "Planificamos las experiencias y aventuras por y para ti."
+     
+    ],
+    "Why2": [
+      "Te acompañara nuestra Camper Van.",
+      "Te Ofrecemos un servicio personalizado y de calidad.",
+      "Te guiamos en tús vacaciones para que no tengas preocupaciones."
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-bus",
+      "name": "Alquiler de Camper Van",
+      "text": "Si gustas puedes alquilar nuestra Camper Van unicamente, tranquilo incluira todo lo básico y necesario para que puedas disfrutar al máximo de tus días."
+    },
+    {
+      "icon": "fa fa-bus",
+      "name": "Planificamos tus experiencias",
+      "text": "Si deseas que planifiquemos por tí las aventuras que deseas vivir, haremos las reservaciones de las actividades, te guiaremos en todo lo que necesites."
+    },
+ 
+    {
+      "icon": "fa fa-life-ring",
+      "name": "Actividades acuaticas",
+      "text": "Te ofrecemos varios kit que puedes ajustar a tu gusto para que disfrutes de experiencias acuaticas como: Kayak, Paddle, Raquetas de playa, Snorkeling, entre otros."
+    },
+    {
+      "icon": "fa fa-bicycle",
+      "name": "Alquiler de Bicicletas",
+      "text": "Puedes alquilar con nosotros las bicicletas para disfrutar de paseos o montaña. Tambien podemos ofrecerte un bono para que uses las bicicletas de la ciudad."
+    },
+    {
+      "icon": "fa fa-paw",
+      "name": "Somos Pet Friendly ",
+      "text": "Puedes disfrutar de los momentos especiales con tu mascota, siempre sera bienvenida."
+    },
+    {
+      "icon": "fa fa-bus",
+      "name": "Momentos especiales",
+      "text": "Te ofrecemos planificar y darte los necesario para que realices un picni para tus ocasines especiales."
+    }
+  
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "Isabel",
+      "job": "Co-fundadora"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Nauzet",
+      "job": ""
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Iria",
+      "job": ""
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen",
+      "job": "Co-fundadora"
+    }
+  ],
+  "Contact": {
+    "address": "Gran Canaria - España ",
+    "phone": "Proximamente",
+    "email": "inikcamper@gmail.com",
+    "facebook": "https://www.facebook.com/InikCamper-113925204533049",
+    "twitter": "https://www.twitter.com/inikcamper",
+    "instagram": "https://www.instagram.com/inikcamper",
+    "whatsapp": "https://wa.me/34667985149"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ]
+}

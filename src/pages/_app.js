@@ -6,9 +6,11 @@ import withRedux from "next-redux-wrapper";
 import store from '../redux/store';
 import { loadIcons } from '../utils/IconLoader';
 import { createWrapper } from 'next-redux-wrapper';
+import initAuth from '../initAuth'
 
 
 loadIcons();
+initAuth();
 
 class MyApp extends App {
 componentDidMount(){

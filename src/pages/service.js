@@ -24,7 +24,7 @@ class ServicePage extends React.Component {
         return (
             <React.Fragment>
             <Header />
-            <Breadcrumb pageTitle="Services" />
+            <Breadcrumb pageTitle="Servicios" />
 
             <ServiceThree />
 				{/* service-end */}

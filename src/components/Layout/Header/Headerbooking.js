@@ -5,8 +5,10 @@ import Head from 'next/head';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import BurgerMenus from './BurgerMenus';
 import HeaderSearch from './HeaderSearch';
+import * as firebase from "firebase/auth";
 
-const Header = () => {
+
+const Headerbooking = () => {
 
    const [menuOpen, setMenuOpen] = useState(false)
    const [searchOpen, setSearchOpen] = useState(false)
@@ -67,7 +69,7 @@ const Header = () => {
 
                                    
                                     <li><Link href="/blog"><a>Blog</a></Link></li>
-                                    <li><Link href="/booking"><a className="theme-btn theme-btn-small">Mis Reservas</a></Link></li>
+                                    <li><Link href="/booking"><a className="theme-btn theme-btn-small">Reservas</a></Link></li>
 
                                  </ul>
                               </nav>
@@ -91,11 +93,10 @@ const Header = () => {
                               </div>
 
                               <div className="header-btn">
-                                 <Link href="/login"><a className="theme-btn theme-btn-small">Login</a></Link>
+                              <button onClick={() => firebase.getAuth().signOut()}><a className="theme-btn theme-btn-small">Logout</a></button>
                               </div>
 
                            </div>
-
                         </div>
 
                      </div>
@@ -114,4 +115,4 @@ const Header = () => {
    );
 }
 
-export default Header;
+export default Headerbooking;

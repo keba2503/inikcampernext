@@ -1,54 +1,76 @@
-import React from 'react';
 import Header from '../components/Layout/Header/Header';
 import Footer from '../components/Layout/Footer/Footer';
+import React, { useEffect, useState } from 'react'
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
+import firebase from 'firebase/compat/app';
+import * as firebases from "firebase/auth";
+import "firebase/auth";
+import { AuthAction, withAuthUser } from 'next-firebase-auth';
 
+const firebaseAuthConfig = {
+    signInFlow: 'popup',
+    // Auth providers
+    // https://github.com/firebase/firebaseui-web#configure-oauth-providers
+    signInOptions: [
+        {
+            provider:  firebases.EmailAuthProvider.PROVIDER_ID,              
+                    requireDisplayName: false,
+        },
+        {
+            provider:  firebases.GoogleAuthProvider.PROVIDER_ID,              
+                    requireDisplayName: false,
+        },
+        // {
+        //     provider:  firebases.FacebookAuthProvider.PROVIDER_ID,              
+        //             requireDisplayName: false,
+        // },
+    ],
+    signInSuccessUrl: '/',
+    credentialHelper: 'none',
+    callbacks: {
+        // https://github.com/firebase/firebaseui-web#signinsuccesswithauthresultauthresult-redirecturl
+        signInSuccessWithAuthResult: () =>
+            // Don't automatically redirect. We handle redirects using
+            // `next-firebase-auth`.
+            false,
+    },
+}
 
-export default function Login() {
+function Auth() {
 
+    const [renderAuth, setRenderAuth] = useState(false)
+    useEffect(() => {
 
+        setRenderAuth(true)
 
+    }, [])
 
     return (
         <>
 
             <React.Fragment>
                 <Header />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <div className='container' id='login'>
-                    <div className="blog-comment-form">
-                        <div className="comment-title2">
-                            <h3 className="comment-box-title">Iniciar Sesión</h3>
-                        </div>
-                        <form action="mail.php" id="contact-form" method="POST">
-                            <div className="row">
-                                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 mb-20">
-                                    <input name="email" type="text" placeholder="Your Email" />
-                                </div>
-                                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 mb-20">
-                                <input name="password" type="password" placeholder="Your Password" />                                </div>
-                                <div className="col-xxl-12 col-xl-12 mb-20">
-                                    <button type="submit" className="theme-btn border-btn">Login</button>
-                                </div>
-                            </div>
-                        </form>
-                        <p className="ajax-response"></p>
+                <div className='container'>
+
+                    <div className='login'>
+                        {renderAuth ? (
+                            <StyledFirebaseAuth
+                                uiConfig={firebaseAuthConfig}
+                                firebaseAuth={firebases.getAuth()}
+                            />
+                        ) : null}
+                        
                     </div>
+
                 </div>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
                 <Footer />
             </React.Fragment>
         </>
     );
 
 }
+
+export default withAuthUser({
+    whenAuthed: AuthAction.REDIRECT_TO_APP,
+
+})(Auth)

@@ -74,9 +74,9 @@ const BurgerMenus = ({ setMenuOpen, menuOpen }) => {
                 </ul>
               </li>
               <li><Link href="/service"><a>Servicios</a></Link></li>
-              <li><Link href="/"><a>Contacto</a></Link></li>
               <li><Link href="/blog"><a>Blog</a></Link></li>
-              <li><Link href="/contact"><a>Reservas</a></Link></li>
+              <li><Link href="/booking"><a>Reservas</a></Link></li>
+              <li><Link href="/login"><a>Login</a></Link></li>
             </ul>
           </div>
           <div className="contact-infos mb-30">

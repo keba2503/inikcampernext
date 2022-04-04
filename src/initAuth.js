@@ -1,8 +1,10 @@
 import { init } from 'next-firebase-auth'
 
 
+
 const initAuth = () => {
     init({
+        
         authPageURL: '/login',
         appPageURL: '/booking',
         loginAPIEndpoint: '/api/login', // required
@@ -54,6 +56,9 @@ const initAuth = () => {
             console.error(err)
         },
     })
+    
+    
+
 }
 
 export default initAuth

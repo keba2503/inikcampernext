@@ -36,8 +36,9 @@ const HeaderTwo = () => {
 	return (
 		<React.Fragment>
 			<Head>
-            {/* <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> */}
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
             <title>Kimox – Digital Agency React, NextJs Template</title>
+
          </Head>
          <header>
             <HeaderTop />

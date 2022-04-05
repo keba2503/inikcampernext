@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import BurgerMenus from './BurgerMenus';
+import BurgerMenusTwoo from './BurgerMenusTwoo';
 import HeaderSearch from './HeaderSearch';
 import * as firebase from "firebase/auth";
 
@@ -104,8 +104,8 @@ const Headerbooking = () => {
                </div>
             </div>
 
-            <BurgerMenus menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-            <div onClick={() => setMenuOpen(false)} className={menuOpen ? "body-overlay show" : "body-overlay"}></div>
+            <BurgerMenusTwoo menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <div onClick={() => setMenuOpen(false)} className={menuOpen ? "body-overlay show" : "body-overlay"}></div>
 
             <HeaderSearch searchOpen={searchOpen} setSearchOpen={setSearchOpen} />
             <div onClick={() => setSearchOpen(false)} className={searchOpen ? "body-overlay show" : "body-overlay"}></div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import BurgerMenus from './BurgerMenus';
+import BurgerMenusTwoo from './BurgerMenusTwoo'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import HeaderTop from './HeaderTop';
 import HeaderSearch from './HeaderSearch';
@@ -120,7 +120,7 @@ const HeaderTwo = () => {
             </div>
         </header>
 
-        <BurgerMenus menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <BurgerMenusTwoo menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <div onClick={() => setMenuOpen(false)} className={menuOpen ? "body-overlay show" : "body-overlay"}></div>
 
         <HeaderSearch searchOpen={searchOpen} setSearchOpen={setSearchOpen} />

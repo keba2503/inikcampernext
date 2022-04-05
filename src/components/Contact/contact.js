@@ -36,9 +36,7 @@ export const Contact = (props) => {
   return (
     <div>
       <div id='contact'>
-          <div className='col-md-8'>
-              <div className='section-title'>
-              </div>
+          <div className='col-md-8'>        
               <form name='sentMessage' onSubmit={handleSubmit} id="contact-form">
                 <div className='row'>
                   <div className='col-md-6'>

@@ -44,7 +44,7 @@ function Register() {
             .then(() => {
               window.alert('Usuario registrado.');
               const docuRef = doc(firestore, `usuarios/${firebases.getAuth().currentUser.uid}`);
-              setDoc(docuRef, { correo: email, rol: rol, nombre: name , apellido: lastname, fechaNacimiento: age});
+              setDoc(docuRef, { correo: email, rol: rol, nombre: name, apellido: lastname, fechaNacimiento: age });
             }).catch((err) => alert(err.message))
 
         })
@@ -82,22 +82,24 @@ function Register() {
                   />
                 </label>
                 <label>
-                Apellido
-                <input
-                  type='text'
-                  value={lastname}
-                  required
-                  placeholder="Last Name"
-                />
-                 </label>
-                 <label>
-                 Fecha de nacimiento
-                <input
-                  type='date'
-                  value={age}
-                  required
-                  placeholder="Age"
-                /> 
+                  Apellido
+                  <input
+                    type='text'
+                    value={lastname}
+                    required
+                    placeholder="Last Name"
+                    onChange={e => setLastname(e.target.value)}
+                  />
+                </label>
+                <label>
+                  Fecha de nacimiento
+                  <input
+                    type='date'
+                    value={age}
+                    required
+                    placeholder="Age"
+                    onChange={e => setAge(e.target.value)}
+                  />
                 </label>
 
                 <label>

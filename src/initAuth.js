@@ -4,7 +4,7 @@ import { init } from 'next-firebase-auth'
 
 const initAuth = () => {
     init({
-        
+
         authPageURL: '/login',
         appPageURL: '/booking',
         loginAPIEndpoint: '/api/login', // required
@@ -30,8 +30,11 @@ const initAuth = () => {
         firebaseClientInitConfig: {
             apiKey: "AIzaSyCJVCF5q4jLNqvoKoK8mvMBFi7YcZ4qRsA",
             authDomain: "inikcamper-97d56.firebaseapp.com",
-            // databaseURL: 'https://my-example-app.firebaseio.com',
+            databaseURL: "https://inikcamper-97d56-default-rtdb.europe-west1.firebasedatabase.app",
             projectId: "inikcamper-97d56",
+            storageBucket: "inikcamper-97d56.appspot.com",
+            messagingSenderId: "265455023952",
+            appId: "1:265455023952:web:1c39e26b99dd98e2fc5e55"
         },
         cookies: {
             name: 'inikcamper-app', // required
@@ -56,8 +59,8 @@ const initAuth = () => {
             console.error(err)
         },
     })
-    
-    
+
+
 
 }
 

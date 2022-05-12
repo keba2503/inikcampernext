@@ -21,7 +21,7 @@ class Pricing extends Component {
                                             <span><img src="https://i.ibb.co/wQYtjHx/furgo.png" /></span>
                                         </div>
                                         <div className="pricing-price mb-25">
-                                            <h5 className="pricing-subtitle">Paquita</h5>
+                                            <h5 className="pricing-subtitle">VW t6</h5>
                                             <h3 className="pricing-title">€76.00 / día</h3>
                                             <Link href="/"><a className="theme-btn">Detalle</a></Link>
                                         </div>
@@ -41,7 +41,7 @@ class Pricing extends Component {
                                             <span><img src="https://i.ibb.co/wQYtjHx/furgo.png" /></span>
                                         </div>
                                         <div className="pricing-price mb-25">
-                                            <h5 className="pricing-subtitle">Lolita</h5>
+                                            <h5 className="pricing-subtitle">VW t5</h5>
                                             <h3 className="pricing-title">€86.00 / día</h3>
                                             <Link href="/"><a className="theme-btn">Detalle</a></Link>
                                         </div>
@@ -61,7 +61,7 @@ class Pricing extends Component {
                                             <span><img src="https://i.ibb.co/wQYtjHx/furgo.png" /></span>
                                         </div>
                                         <div className="pricing-price mb-25">
-                                            <h5 className="pricing-subtitle">Pepita</h5>
+                                            <h5 className="pricing-subtitle">Vw t4</h5>
                                             <h3 className="pricing-title">€66.00 / día</h3>
                                             <Link href="/"><a className="theme-btn">Detalle</a></Link>
                                         </div>

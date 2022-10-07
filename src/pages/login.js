@@ -6,40 +6,6 @@ import { AuthAction, withAuthUser } from 'next-firebase-auth';
 import { signInWithEmailAndPassword, sendEmailVerification } from 'firebase/auth'
 import * as firebases from "firebase/auth";
 import Link from 'next/link';
-// import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
-// import firebase from 'firebase/compat/app';
-// import * as firebases from "firebase/auth";
-
-
-// const firebaseAuthConfig = {
-//     signInFlow: 'popup',
-//     // Auth providers
-//     // https://github.com/firebase/firebaseui-web#configure-oauth-providers
-//     signInOptions: [
-//         {
-//             provider: firebases.EmailAuthProvider.PROVIDER_ID,
-//             requireDisplayName: false,
-//         },
-//         {
-//             provider: firebases.GoogleAuthProvider.PROVIDER_ID,
-//             requireDisplayName: false,
-//         },
-//         // {
-//         //     provider:  firebases.FacebookAuthProvider.PROVIDER_ID,              
-//         //             requireDisplayName: false,
-//         // },
-//     ],
-//     signInSuccessUrl: '/',
-//     credentialHelper: 'none',
-//     callbacks: {
-//         // https://github.com/firebase/firebaseui-web#signinsuccesswithauthresultauthresult-redirecturl
-//         signInSuccessWithAuthResult: () =>
-//             // Don't automatically redirect. We handle redirects using
-//             // `next-firebase-auth`.
-//             false,
-//     },
-// }
-
 
 
 function Auth() {
@@ -69,8 +35,6 @@ function Auth() {
     return (
         <React.Fragment>
             <Header />
-
-
             <div className='container'>
                 <div className='login'>
                     <div class="login-page">
@@ -78,8 +42,8 @@ function Auth() {
                             <div className="faq-form-title-wrapper text-center">
                                 <h5 className="faq-form-title">Iniciar Sesión</h5>
                             </div>
-                            <form onSubmit={login} name='login_form'>
-                         
+
+                            <form onSubmit={login} name='login_form'>                         
                                 <input
                                     type='email'
                                     value={email}
@@ -97,22 +61,20 @@ function Auth() {
 
                                 {error && <div className='auth__error'>{error}</div>}
                             </form>
+
                             <div className='parr-login'>
                                 <p>
                                     ¿No Tienes cuenta? -- <Link href='/register'>Registrar</Link>
-                                </p>
-                                
+                                </p>                                
                             </div>
-                            <Link href='/resetpass'>¿Olvidaste tu contraseña?</Link>
 
+                            <Link href='/resetpass'>¿Olvidaste tu contraseña?</Link>
 
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
+            
             <Footer />
         </React.Fragment>
     )

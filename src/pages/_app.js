@@ -16,15 +16,15 @@ class MyApp extends App {
 componentDidMount(){
     typeof document !== undefined ? require('bootstrap/dist/js/bootstrap') : null
 }
-    static async getInitialProps({Component, ctx}) {
-        const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
+    static async  getServerSideProps({Component, ctx}) {
+        const pageProps = Component. getServerSideProps ? await Component. getServerSideProps(ctx) : {};
 
         //Anything returned here can be accessed by the client
         return {pageProps: pageProps};
     }
 
     render() {
-        //Page props that were returned  from 'getInitialProps' are stored in the props i.e. pageprops
+        //Page props that were returned  from ' getServerSideProps' are stored in the props i.e. pageprops
         const {Component, pageProps} = this.props;
 
         return (

@@ -5,9 +5,6 @@ import Footer from '../components/Layout/Footer/Footer';
 
 export default function Register() {
 
-
-
-
     return (
         <>
 
@@ -25,6 +22,7 @@ export default function Register() {
                         <div className="comment-title2">
                             <h3 className="comment-box-title">Registrar</h3>
                         </div>
+
                         <form action="mail.php" id="contact-form" method="POST">
                             <div className="row">
                             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 mb-20">
@@ -42,10 +40,9 @@ export default function Register() {
                                 <div className="col-xxl-6 col-xl-18 mb-20">
                                     <button type="submit" className="theme-btn border-btn">registrar</button>
                                 </div>
-
-
                             </div>
                         </form>
+
                         <p className="ajax-response"></p>
                     </div>
                 </div>

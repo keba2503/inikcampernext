@@ -13,6 +13,7 @@ loadIcons();
 initAuth();
 
 class MyApp extends App {
+    
 componentDidMount(){
     typeof document !== undefined ? require('bootstrap/dist/js/bootstrap') : null
 }

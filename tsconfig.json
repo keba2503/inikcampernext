@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/config/db.js", "src/pages/admin.js", "src/pages/admin.js"  ],
   "exclude": [
     "node_modules"
   ]

@@ -12,7 +12,7 @@ class ContactMain extends Component {
         return (
             <main>
                 {/* breadcrumb-start */}
-				<Breadcrumb pageTitle="Contct" />
+				<Breadcrumb pageTitle="admin" />
 				{/* breadcrumb-end */}
 
                 {/* contact-start */}
@@ -20,12 +20,7 @@ class ContactMain extends Component {
 				{/* contact-end */}
 
                 {/* cta-start */}
-                <CtaTwo />
-				{/* cta-end */}
-
-                {/* map-start */}
-                <Map />
-                {/* map-end */}
+               
         	</main>
         );
     }

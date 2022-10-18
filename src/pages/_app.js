@@ -7,12 +7,20 @@ import store from '../redux/store';
 import { loadIcons } from '../utils/IconLoader';
 import { createWrapper } from 'next-redux-wrapper';
 import initAuth from '../initAuth'
-
+// date-fns
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+// or for Day.js
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+// or for Luxon
+import { AdapterLuxon } from '@mui/x-date-pickers/AdapterLuxon';
+// or for Moment.js
+import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment';
+import {Calendar} from '../components/calender/calender'
 
 loadIcons();
 initAuth();
 
-class MyApp extends App {
+class MyApp extends App  {
     
 componentDidMount(){
     typeof document !== undefined ? require('bootstrap/dist/js/bootstrap') : null
@@ -29,8 +37,9 @@ componentDidMount(){
         const {Component, pageProps} = this.props;
 
         return (
-            <Provider store={store}>
+            <Provider store={store} dateAdapter={AdapterDayjs}>
                 <Component {...pageProps}/>
+                {Calendar}
             </Provider>
         );
     }

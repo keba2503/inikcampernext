@@ -9,6 +9,7 @@ import React from 'react'
 import Footer from '../components/Layout/Footer/Footer'
 import Breadcrumb from '../components/Common/Breadcrumb'
 import Calender from '../components/calender/calender'
+import CalenderFin from '../components/calender/calenderfin'
 
 const Booking = () => {
   const user = useAuthUser()
@@ -20,21 +21,37 @@ const Booking = () => {
         <Breadcrumb pageTitle="Reservación " />
 
         <div className="container">
-          <h2 className="titulobooking">
-            Hola! {user.email ? user.email : 'inexistente'}
-          </h2>
-
-          <div className="container">
-            <h3 className="titulobooking">Selecciona tu fecha de reserva</h3>
-            <Calender />
-          </div>
+        <h2 className="section-title mb-35"></h2>
         </div>
+        <div className="container">
+          <div
+            className="kintro-text mr-xs-0 mr-md-0 mr-lg-0 mr-70 mb-30"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div className="section-title-wrapper mb-25">
+             
+              <p>
+              Hola! {user.email ? user.email : 'inexistente'}   Selecciona tu fecha de reserva
+              </p>
+            </div>
+            
+          </div>
+
+          <Calender  />
+          <br></br>
+          <br></br>
+          <CalenderFin />
+
+       
+        </div>
+
         <div className="container">
           <br></br>
           <br></br>
           <br></br>
-          </div>
-        <Footer/>
+        </div>
+        <Footer />
       </React.Fragment>
     </>
   )

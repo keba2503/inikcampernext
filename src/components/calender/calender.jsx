@@ -1,60 +1,62 @@
 import * as React from 'react'
 import { useState } from 'react'
 import dayjs from 'dayjs'
-import Stack from '@mui/material/Stack'
-import TextField from '@mui/material/TextField'
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider'
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
-import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker'
-import { StaticDateRangePicker } from '@mui/x-date-pickers-pro/StaticDateRangePicker'
+
 
 export default function Calendar() {
-  const [valueini, setValueini] = useState(dayjs())
-
-
-  // const [date, setDate] = useState(new Date().toLocaleDateString('fr-FR'))
-  // const [value, setValue] = React.useState([null, null])
-
-  const handleChange = (newValue) => {
-    setValueini(newValue)
-    
-  }
 
   //Obtener datos de formulario
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const formData = {
+      fechaini: e.target.dateini.value,
+      fechafin: e.target.datefin.value,
+
+    }
+
+    // const res =  axios.post('/api/products', {
+    //     name: e.target.name.value,
+    //     comment: e.target.comment.value
+    // })
+    console.log({ formData })
+  }
+
   return (
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <Stack spacing={3}>
-        <DesktopDatePicker
-          
-          name="fecha"
-          label="Fecha inicio"
-          inputFormat="DD/MM/YYYY"
-          value={valueini}
-          onChange={handleChange}
-          // {(date) => {
-          //   const d = new Date(date).toLocaleDateString('fr-FR')
-          //   console.log(d)
-          //   setDate(d)
 
-          renderInput={(params) => <TextField {...params} />}
-        />
+    <div className="row">
+      <div className="col-xxl-5 col-xl-6 col-lg-6">
+        <div className="section-title-wrapper mb-15">
 
-        {/* <StaticDateRangePicker
-          displayStaticWrapperAs="desktop"
-          value={value}
-          onChange={(newValue) => {
-            setValue(newValue)
-          }}
-          renderInput={(startProps, endProps) => (
-            <React.Fragment>
-              <TextField {...startProps} />
-              <Box sx={{ mx: 2 }}> to </Box>
-              <TextField {...endProps} />
-            </React.Fragment>
-          )}
-        /> */}
-      </Stack>
-    </LocalizationProvider>
+        </div>
+
+      </div>
+
+      <div className="col-xxl-7 col-xl-6 col-lg-6">
+        <div className="contact-form">
+          <form action="input" id="contact-form" method="POST" onSubmit={handleSubmit}>
+            <div className="row">
+              <div className="col-xxl-6 col-xl-6 col-lg-6 mb-20">
+                <label>Fecha Inicio</label>
+                <input name="dateini" type="date" placeholder="Fecha inicio" />
+              </div>
+              <div className="col-xxl-6 col-xl-6 col-lg-6 mb-20">
+                <label>Fecha Fin</label>
+                <input name="datefin" type="date" placeholder="Fecha fin" />
+              </div>
+
+              <div className="col-xxl-12 col-xl-12 mb-20">
+                <button type="submit" className="theme-btn border-btn">Disponibilidad</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+
+
   )
 }

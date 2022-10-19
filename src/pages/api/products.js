@@ -9,7 +9,9 @@ switch (req.method) {
     case 'POST':  
             const result = await pool.query("INSERT INTO comment SET ?", {
             name: req.body.name,
-            comment: req.body.comment
+            comment: req.body.comment,
+            fechaini: req.body.fechaini,
+            fechafin: req.body.fechafin
         })
         console.log(result)
         return res.status(200).json('Creando producto');

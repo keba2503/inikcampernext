@@ -32,7 +32,7 @@ const Booking = () => {
             <div className="section-title-wrapper mb-25">
              
               <p>
-              Hola! {user.email ? user.email : 'inexistente'}   Selecciona tu fecha de reserva
+              Hola! {user.email ? user.email : 'inexistente'}   Selecciona  tu posible fecha de reserva
               </p>
             </div>
             
@@ -41,7 +41,7 @@ const Booking = () => {
           <Calender  />
           <br></br>
           <br></br>
-          <CalenderFin />
+          
 
        
         </div>

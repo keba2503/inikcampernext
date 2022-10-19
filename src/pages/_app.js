@@ -18,7 +18,6 @@ import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment';
 
 loadIcons();
 initAuth();
-
 class MyApp extends App  {
     
 componentDidMount(){

@@ -30,8 +30,8 @@ function Reset() {
             <Header />
             <div className='container'>
                 <div className='login'>
-                    <div class="login-page">
-                        <div class="form-login">
+                    <div className="login-page" >
+                        <div className="form-login">
                             <div className="faq-form-title-wrapper text-center">
                                 <h5 className="faq-form-title">Restablecer</h5>
                             </div>

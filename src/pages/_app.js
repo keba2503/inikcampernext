@@ -15,7 +15,6 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { AdapterLuxon } from '@mui/x-date-pickers/AdapterLuxon';
 // or for Moment.js
 import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment';
-import {Calendar} from '../components/calender/calender'
 
 loadIcons();
 initAuth();
@@ -39,7 +38,7 @@ componentDidMount(){
         return (
             <Provider store={store} dateAdapter={AdapterDayjs}>
                 <Component {...pageProps}/>
-                {Calendar}
+                {/* {Calendar} */}
             </Provider>
         );
     }

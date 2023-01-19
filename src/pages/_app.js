@@ -6,18 +6,9 @@ import withRedux from "next-redux-wrapper";
 import store from '../redux/store';
 import { loadIcons } from '../utils/IconLoader';
 import { createWrapper } from 'next-redux-wrapper';
-import initAuth from '../initAuth'
-// date-fns
-import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
-// or for Day.js
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-// or for Luxon
-import { AdapterLuxon } from '@mui/x-date-pickers/AdapterLuxon';
-// or for Moment.js
-import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment';
+
 
 loadIcons();
-initAuth();
 class MyApp extends App  {
     
 componentDidMount(){
@@ -35,7 +26,7 @@ componentDidMount(){
         const {Component, pageProps} = this.props;
 
         return (
-            <Provider store={store} dateAdapter={AdapterDayjs}>
+            <Provider store={store} >
                 <Component {...pageProps}/>
                 {/* {Calendar} */}
             </Provider>

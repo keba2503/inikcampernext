@@ -33,7 +33,7 @@ const FooterTwo = () => {
                            <ul>
                                  <li><Link href="/service"><a>Our Services</a></Link></li>
                                  <li><Link href="/about"><a>Meet Our Team</a></Link></li>
-                                 <li><Link href="/project"><a>Our Portfolio</a></Link></li>
+                                 <li><Link href="/booking"><a>Our Portfolio</a></Link></li>
                                  <li><Link href="/contact"><a>Contact</a></Link></li>
                                  <li><Link href="/contact"><a>Help</a></Link></li>
                            </ul>

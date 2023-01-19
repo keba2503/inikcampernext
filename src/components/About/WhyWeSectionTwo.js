@@ -23,6 +23,17 @@ class WhyWeTwo extends Component {
                            <p>Somos una familia aventurera y emprendedora. Nuestras iniciales conforman unidas el nombre de nuestro estupendo equipo " INIK ". Las encargadas de las responsabilidades somos las adultas y los encargados de disfrutar al maximo son los pequeños.</p>
                         </div>
                     </div>
+
+                    <div className="col-xl-6 col-lg-6 col-md-12">
+                        <div className="choose-left mb-40 mr-xs-0 mr-md-0 mr-lg-0 mr-90" data-aos="fade-up-right" data-aos-duration="1000">
+                            <div className="section-title-wrapper">
+                                <h5 className="section-subtitle mb-20">¿Por que viajar con Nosotros?</h5>
+                                <h2 className="section-title mb-35"></h2>
+                            </div>
+                            <img src="assets/img/about/about-img-77.jpeg" className="img-fluid" alt="about-img" />
+
+                        </div>
+                    </div>
                    
                 </div>
             </div>

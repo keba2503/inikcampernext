@@ -15,7 +15,7 @@ class FaqPage extends React.Component {
         return (
             <React.Fragment>
             <Header />
-            <FaqMain />
+            <FaqMain /> 
             <Footer />
             </React.Fragment>
         );

@@ -61,7 +61,6 @@ const Headerbooking = () => {
                                           <li><Link href="/about"><a>Quienes Somos</a></Link></li>
                                           <li><Link href="/team"><a>Nuestro Equipo</a></Link></li>
                                           <li><Link href="/faq"><a>Preguntas Frecuentes FAQ</a></Link></li>
-                                          <li><Link href="/gallery"><a>Galeria</a></Link></li>
                                        </ul>
                                     </li>
                                     <li className="menu-item-has-children"><Link href="/service"><a>Servicios</a></Link>
@@ -82,7 +81,7 @@ const Headerbooking = () => {
                         <div className="col-xl-4 d-none d-xl-block">
                            <div className="header-right text-end">
                               <div className="header-social">
-                                 <a href="https://wa.me/34667985149" target="_blank"><i ><FontAwesomeIcon id="whatsaap" icon={['fab', 'whatsapp']} /></i></a>
+                                 <a href="https://wa.me/34684198547" target="_blank"><i ><FontAwesomeIcon id="whatsaap" icon={['fab', 'whatsapp']} /></i></a>
                                  <a href="https://www.instagram.com/inikcamper" target="_blank"><i><FontAwesomeIcon icon={['fab', 'instagram']} /></i></a>
                                  <a href="https://www.twitter.com/inikcamper" target="_blank"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a>
                                  <a href="https://www.facebook.com/InikCamper-113925204533049" target="_blank"><i><FontAwesomeIcon icon={['fab', 'facebook']} /></i></a>
@@ -93,7 +92,6 @@ const Headerbooking = () => {
                               </div>
 
                               <div className="header-btn">
-                              <button onClick={() => firebase.getAuth().signOut()}><a className="theme-btn theme-btn-small">Logout</a></button>
                               </div>
 
                            </div>

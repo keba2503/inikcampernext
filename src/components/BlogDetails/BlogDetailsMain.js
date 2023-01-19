@@ -75,25 +75,26 @@ class BlogDetailsMain extends Component {
                                     <div className="kblog">
                                         <div className="kblog-img">
                                             <img src={article.image} alt={article.title} />
-                                            <span>21 May</span>
+                                            <span>Diciembre 2022</span>
                                         </div>
                                         <div className="kblog-text kblog-text2 kblog-text22">
                                             <div className="kblog-meta pb-10">
                                                 <Link href="/blog-details"><a><i><FontAwesomeIcon icon={['fas', 'user-circle']} /></i> {article.user}</a></Link>
-                                                <Link href="/blog-details"><a><i><FontAwesomeIcon icon={['fas', 'comments']} /></i> {article.comments}</a></Link>
+                                               
                                             </div>
                                             <p className="mb-20">{article.text}</p>
                                             <p>{article.textTwo}</p>
+                                            <p>{article.textTree}</p>
                                         </div>
                                     </div>
 
-                                    <BlogDetailsInfo />
+                                    {/* <BlogDetailsInfo /> */}
 
-                                    <BlogAuthor />
+                                    {/* <BlogAuthor /> */}
 
-                                    <BlogComment />
+                                    {/* <BlogComment />
 
-                                    <BlogCommentForm />
+                                    <BlogCommentForm /> */}
                                     
                                 </div>
                                 ))}
@@ -101,13 +102,13 @@ class BlogDetailsMain extends Component {
                             </div>
                             <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 mt-md-40 mt-xs-40">
                                 <div className="sidebar-wrap">
-                                    <BlogSidebarSearch />
+                                    {/* <BlogSidebarSearch /> */}
 
                                     <BlogSidebarPost />
 
-                                    <BlogSidebarCat />
+                                    {/* <BlogSidebarCat />
 
-                                    <BlogSidebarTags />
+                                    <BlogSidebarTags /> */}
                                 </div>
                             </div>
                         </div>

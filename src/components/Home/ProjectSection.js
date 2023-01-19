@@ -19,7 +19,6 @@ class Project extends Component {
                         <div className="col-md-8">
                             <div className="section-title-wrapper mb-45">
                                 <h5 className="section-subtitle mb-20">Recuerdos que perduran</h5>
-                                <h2 className="section-title">Nuestra galeria</h2>
                             </div>
                         </div>
                         <div className="col-md-4">

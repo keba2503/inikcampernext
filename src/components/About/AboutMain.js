@@ -1,17 +1,14 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import dynamic from 'next/dynamic';
 import Breadcrumb from '../Common/Breadcrumb';
 import Mission from './MissionSection';
-import FactTwo from './FactSectionTwo';
-import WhyWeTwo from './WhyWeSectionTwo';
-import TeamTwo from './TeamSectionTwo';
+
 const BrandThree = dynamic(() => import('../Elements/Brand/BrandSectionThree'), {
     ssr: false
-  })
+})
 const Testimonial = dynamic(() => import('../Elements/Testimonials/TestimonialsSection'), {
     ssr: false
-  })
-
+})
 
 class AboutMain extends Component {
 
@@ -20,37 +17,37 @@ class AboutMain extends Component {
         return (
             <main>
                 {/* breadcrumb-start */}
-				<Breadcrumb pageTitle="Quienes Somos" />
-				{/* breadcrumb-end */}
+                <Breadcrumb pageTitle="Quienes Somos"/>
+                {/* breadcrumb-end */}
 
                 {/* mission-start */}
-                <Mission />
-				{/* mission-end */}
+                <Mission/>
+                {/* mission-end */}
 
                 {/* testimonial-start */}
                 <div className='mt--30'>
                     {/* <Testimonial /> */}
                 </div>
-				{/* testimonial-end */}
+                {/* testimonial-end */}
 
                 {/* fact-start */}
-				{/* <FactTwo /> */}
-				{/* fact-end */}
+                {/* <FactTwo /> */}
+                {/* fact-end */}
 
                 {/* why-we-start */}
-				{/* <WhyWeTwo /> */}
-				{/* why-we-end */}
+                {/* <WhyWeTwo /> */}
+                {/* why-we-end */}
 
                 {/* team-start */}
-				{/* <TeamTwo /> */}
-				{/* team-end */}
+                {/* <TeamTwo /> */}
+                {/* team-end */}
 
                 {/* brand-start */}
-				{/* <BrandThree /> */}
-				{/* brand-end */}
+                {/* <BrandThree /> */}
+                {/* brand-end */}
                 <br/><br/><br/>
 
-        	</main> 
+            </main>
         );
     }
 }

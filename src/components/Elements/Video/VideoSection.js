@@ -1,26 +1,25 @@
-import React, { Component } from 'react';
-import Link from 'next/link';
+import React, {Component} from 'react';
 import ReactPlayer from "react-player";
 import Modal from "react-responsive-modal";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 class Video extends Component {
 
     state = {
         open: false
-      };
-    
-      onOpenModal = () => {
-        this.setState(prevState => ({
-          open: !prevState.open
-        }));
-      };
+    };
 
-      onCloseModal = () => {
+    onOpenModal = () => {
         this.setState(prevState => ({
-          open: !prevState.open
+            open: !prevState.open
         }));
-      };
+    };
+
+    onCloseModal = () => {
+        this.setState(prevState => ({
+            open: !prevState.open
+        }));
+    };
 
     render() {
         return (
@@ -29,24 +28,24 @@ class Video extends Component {
                     open={this.state.open}
                     onClose={this.onCloseModal}
                     styles={{
-                    modal: {
-                        maxWidth: "unset",
-                        width: "70%",
-                        padding: "unset"
-                    },
-                    overlay: {
-                        background: "rgba(0, 0, 0, 0.5)"
-                    },
-                    closeButton: {
-                        background: "yellow"
-                    }
+                        modal: {
+                            maxWidth: "unset",
+                            width: "70%",
+                            padding: "unset"
+                        },
+                        overlay: {
+                            background: "rgba(0, 0, 0, 0.5)"
+                        },
+                        closeButton: {
+                            background: "yellow"
+                        }
                     }}
                     center
                 >
                     <ReactPlayer
-                    url="https://youtu.be/fdulYr6MMOU"
-                    width="100%"
-                    height="calc(100vh - 100px)"
+                        url="https://youtu.be/fdulYr6MMOU"
+                        width="100%"
+                        height="calc(100vh - 100px)"
                     />
                 </Modal>
                 <section className="video-area z-index">
@@ -62,12 +61,14 @@ class Video extends Component {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="kvideo-wrapper" data-aos="zoom-in" data-aos-duration="1000">
-                                    <div className="kvideo" style={{ backgroundImage:`url(${'assets/img/bg/video-bg.jpg'})`}}>
+                                    <div className="kvideo"
+                                         style={{backgroundImage: `url(${'assets/img/bg/video-bg.jpg'})`}}>
                                         <div className="kvideo-sign text-center">
-                                            <a href="#!" className="play-btn" onClick={this.onOpenModal}> <i><FontAwesomeIcon icon={['fas', 'play']} /></i> </a>
+                                            <a href="#!" className="play-btn" onClick={this.onOpenModal}>
+                                                <i><FontAwesomeIcon icon={['fas', 'play']}/></i> </a>
                                             <h2>Ver Video</h2>
                                         </div>
-                                       
+
                                     </div>
                                 </div>
                             </div>

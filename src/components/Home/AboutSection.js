@@ -12,7 +12,6 @@ class About extends Component {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="kabout-img mb-50 mr-70" data-aos="zoom-out-up" data-swiper-autoplay="10000">
-                                <div className="kabout-img-shape"></div>
                                 <img src="assets/img/about/about-img-1.jpg" className="img-fluid z-index"
                                      alt="about-img"/>
                             </div>

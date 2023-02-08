@@ -66,7 +66,7 @@ const Header = () => {
 
                                    
                                     <li><Link href="/blog"><a>Blog</a></Link></li>
-                                    <li><Link href="/booking"><a className="theme-btn theme-btn-small">Mis Reservas</a></Link></li>
+                                    <li><Link href="https://www.yescapa.es/campers/57378/"><a className="theme-btn theme-btn-small">Mis Reservas</a></Link></li>
 
                                  </ul>
                               </nav>

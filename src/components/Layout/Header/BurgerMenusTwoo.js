@@ -76,7 +76,7 @@ const BurgerMenusTwoo = ({ setMenuOpen, menuOpen }) => {
               </li>
               <li><Link href="/service"><a>Servicios</a></Link></li>
               <li><Link href="/blog"><a>Blog</a></Link></li>
-              <li><Link href="/booking"><a>Reservas</a></Link></li>
+              <li><Link href="https://www.yescapa.es/campers/57378/"><a>Reservas</a></Link></li>
             
               <li><a onClick={() => firebase.getAuth().signOut()}>Cerrar sesión</a></li> 
               

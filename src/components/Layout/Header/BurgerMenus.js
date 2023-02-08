@@ -74,7 +74,7 @@ const BurgerMenus = ({ setMenuOpen, menuOpen }) => {
               </li>
               <li><Link href="/service"><a>Servicios</a></Link></li>
               <li><Link href="/blog"><a>Blog</a></Link></li>
-              <li><Link href="https://www.yescapa.es/campers/57378/"><a>Reservas</a></Link></li>
+              <li><a href="https://www.yescapa.es/campers/57378/"  target="_blank">Reservas</a></li>
             </ul>
           </div>
           <div className="contact-infos mb-30">

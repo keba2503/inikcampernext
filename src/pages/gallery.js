@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from '../components/Layout/Header/Header';
 import Footer from '../components/Layout/Footer/Footer';
+import ProjectMain from '../components/Project/ProjectMain';
 
-class Gallery extends React.Component {
+class ProjectPage extends React.Component {
 
     static getInitialProps({store}) {}
 
@@ -14,7 +15,7 @@ class Gallery extends React.Component {
         return (
             <React.Fragment>
             <Header />
-           
+            <ProjectMain />
             <Footer />
             </React.Fragment>
         );
@@ -22,4 +23,5 @@ class Gallery extends React.Component {
 }
 
 
-export default Gallery;
+export default ProjectPage;
+

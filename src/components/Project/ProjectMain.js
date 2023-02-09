@@ -10,7 +10,7 @@ class ProjectMain extends Component {
         return (
             <main>
                 {/* breadcrumb-start */}
-				<Breadcrumb pageTitle="Projects" />
+				<Breadcrumb pageTitle="Galeria" />
 				{/* breadcrumb-end */}
 
                 {/* service-start */}

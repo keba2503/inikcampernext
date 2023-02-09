@@ -68,9 +68,9 @@ const HeaderTwo = () => {
                                                    <li><Link href="/service-details"><a>Services Details</a></Link></li>
                                              </ul>
                                           </li>
-                                          <li className="menu-item-has-children"><Link href="/project"><a>Projects</a></Link>
+                                          <li className="menu-item-has-children"><Link href="/gallery"><a>Projects</a></Link>
                                              <ul className="sub-menu">
-                                                   <li><Link href="/project"><a>Projects</a></Link></li>
+                                                   <li><Link href="/gallery"><a>Projects</a></Link></li>
                                                    <li><Link href="/project-details"><a>Projects Details</a></Link></li>
                                              </ul>
                                           </li>
@@ -85,7 +85,7 @@ const HeaderTwo = () => {
                                                    <li><Link href="/pricing"><a>Pricing</a></Link></li>
                                                    <li><Link href="/faq"><a>Faq</a></Link></li>
                                                    <li><Link href="/about"><a>About</a></Link></li>
-                                                   <li><Link href="/project"><a>Project</a></Link></li>
+                                                   <li><Link href="/gallery"><a>Project</a></Link></li>
                                                    <li><Link href="/project-details"><a>Project Details</a></Link></li>
                                                    <li><Link href="/contact"><a>Contact</a></Link></li>
                                              </ul>

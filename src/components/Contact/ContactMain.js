@@ -3,6 +3,8 @@ import Breadcrumb from '../Common/Breadcrumb';
 import Map from '../Home/MapSection';
 import CtaTwo from '../HomeTwo/CtaTwoSection';
 import Contact from './ContactSection';
+import {Formfaq} from '../Contact/formfaq'
+
 
 
 class ContactMain extends Component {
@@ -12,11 +14,11 @@ class ContactMain extends Component {
         return (
             <main>
                 {/* breadcrumb-start */}
-				<Breadcrumb pageTitle="admin" />
+				<Breadcrumb pageTitle="Contacto" />
 				{/* breadcrumb-end */}
 
                 {/* contact-start */}
-                <Contact />
+                <Formfaq />
 				{/* contact-end */}
 
                 {/* cta-start */}

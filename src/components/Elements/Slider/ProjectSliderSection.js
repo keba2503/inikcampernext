@@ -57,7 +57,7 @@ class ProjectSlider extends Component {
                                     <h5 className="kproject-text-title"><Link href="/gallery"><a>Galeria</a></Link></h5>
                                 </div>
                                 <div className="kproject-text-icon">
-                                    <Link href="/"><a><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></a></Link>
+                                    <Link href="/gallery"><a><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></a></Link>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +71,7 @@ class ProjectSlider extends Component {
                                     <span></span>
                                     <h5 className="kproject-text-title"><Link href="/gallery"><a>Galeria</a></Link></h5>                                </div>
                                 <div className="kproject-text-icon">
-                                    <Link href="/"><a><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></a></Link>
+                                    <Link href="/gallery"><a><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></a></Link>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@ class ProjectSlider extends Component {
                                     <span></span>
                                     <h5 className="kproject-text-title"><Link href="/gallery"><a>Galeria</a></Link></h5>                                </div>
                                 <div className="kproject-text-icon">
-                                    <Link href="/"><a><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></a></Link>
+                                    <Link href="/gallery"><a><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></a></Link>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +99,7 @@ class ProjectSlider extends Component {
                                     <span></span>
                                     <h5 className="kproject-text-title"><Link href="/gallery"><a>Galeria</a></Link></h5>                                </div>
                                 <div className="kproject-text-icon">
-                                    <Link href="/"><a><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></a></Link>
+                                    <Link href="/gallery"><a><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></a></Link>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +113,7 @@ class ProjectSlider extends Component {
                                     <span></span>
                                     <h5 className="kproject-text-title"><Link href="/gallery"><a>Galeria</a></Link></h5>                                </div>
                                 <div className="kproject-text-icon">
-                                    <Link href="/"><a><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></a></Link>
+                                    <Link href="/gallery"><a><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></a></Link>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +127,7 @@ class ProjectSlider extends Component {
                                     <span></span>
                                     <h5 className="kproject-text-title"><Link href="/gallery"><a>Galeria</a></Link></h5>                                </div>
                                 <div className="kproject-text-icon">
-                                    <Link href="/"><a><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></a></Link>
+                                    <Link href="/gallery"><a><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></a></Link>
                                 </div>
                             </div>
                         </div>
@@ -141,7 +141,7 @@ class ProjectSlider extends Component {
                                     <span></span>
                                     <h5 className="kproject-text-title"><Link href="/gallery"><a>Galeria</a></Link></h5>                                </div>
                                 <div className="kproject-text-icon">
-                                    <Link href="/"><a><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></a></Link>
+                                    <Link href="/gallery"><a><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></a></Link>
                                 </div>
                             </div>
                         </div>

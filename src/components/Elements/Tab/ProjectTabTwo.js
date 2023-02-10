@@ -90,6 +90,141 @@ export default () => (
                             </div>
                         </div>
 
+                        <div className="col-lg-4 col-md-6">
+                            <div className="kproject kproject-2 mb-30">
+                                <img src="assets/img/project/1.jpg" className="img-fluid" alt="project_img"/>
+                                <div className="kproject-text kproject-text-2">
+                                    <div className="kproject-text-content">
+                                        <span></span>
+                                        <h5 className="kproject-text-title"><Link href="/gallery"><a>Detalle</a></Link>
+                                        </h5>
+                                    </div>
+                                    <div className="kproject-text-icon">
+                                        <Link href="/gallery"><a><i><FontAwesomeIcon
+                                            icon={['fas', 'long-arrow-alt-right']}/></i></a></Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6">
+                            <div className="kproject kproject-2 mb-30">
+                                <img src="assets/img/project/5.jpg" className="img-fluid" alt="project_img"/>
+                                <div className="kproject-text kproject-text-2">
+                                    <div className="kproject-text-content">
+                                        <span></span>
+                                        <h5 className="kproject-text-title"><Link href="/gallery"><a>Detalle</a></Link>
+                                        </h5>
+                                    </div>
+                                    <div className="kproject-text-icon">
+                                        <Link href="/gallery"><a><i><FontAwesomeIcon
+                                            icon={['fas', 'long-arrow-alt-right']}/></i></a></Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-md-6">
+                            <div className="kproject kproject-2 mb-30">
+                                <img src="assets/img/project/3.jpg" className="img-fluid" alt="project_img"/>
+                                <div className="kproject-text kproject-text-2">
+                                    <div className="kproject-text-content">
+                                        <span></span>
+                                        <h5 className="kproject-text-title"><Link href="/gallery"><a>Detalle</a></Link>
+                                        </h5>
+                                    </div>
+                                    <div className="kproject-text-icon">
+                                        <Link href="/gallery"><a><i><FontAwesomeIcon
+                                            icon={['fas', 'long-arrow-alt-right']}/></i></a></Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-md-6">
+                            <div className="kproject kproject-2 mb-30">
+                                <img src="assets/img/project/22.jpg" className="img-fluid" alt="project_img"/>
+                                <div className="kproject-text kproject-text-2">
+                                    <div className="kproject-text-content">
+                                        <span></span>
+                                        <h5 className="kproject-text-title"><Link href="/gallery"><a>Detalle</a></Link>
+                                        </h5>
+                                    </div>
+                                    <div className="kproject-text-icon">
+                                        <Link href="/gallery"><a><i><FontAwesomeIcon
+                                            icon={['fas', 'long-arrow-alt-right']}/></i></a></Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-md-6">
+                            <div className="kproject kproject-2 mb-30">
+                                <img src="assets/img/project/8.jpg" className="img-fluid" alt="project_img"/>
+                                <div className="kproject-text kproject-text-2">
+                                    <div className="kproject-text-content">
+                                        <span></span>
+                                        <h5 className="kproject-text-title"><Link href="/gallery"><a>Detalle</a></Link>
+                                        </h5>
+                                    </div>
+                                    <div className="kproject-text-icon">
+                                        <Link href="/gallery"><a><i><FontAwesomeIcon
+                                            icon={['fas', 'long-arrow-alt-right']}/></i></a></Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-md-6">
+                            <div className="kproject kproject-2 mb-30">
+                                <img src="assets/img/project/6.jpg" className="img-fluid" alt="project_img"/>
+                                <div className="kproject-text kproject-text-2">
+                                    <div className="kproject-text-content">
+                                        <span></span>
+                                        <h5 className="kproject-text-title"><Link href="/gallery"><a>Detalle</a></Link>
+                                        </h5>
+                                    </div>
+                                    <div className="kproject-text-icon">
+                                        <Link href="/gallery"><a><i><FontAwesomeIcon
+                                            icon={['fas', 'long-arrow-alt-right']}/></i></a></Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-md-6">
+                            <div className="kproject kproject-2 mb-30">
+                                <img src="assets/img/project/7.jpg" className="img-fluid" alt="project_img"/>
+                                <div className="kproject-text kproject-text-2">
+                                    <div className="kproject-text-content">
+                                        <span></span>
+                                        <h5 className="kproject-text-title"><Link href="/gallery"><a>Detalle</a></Link>
+                                        </h5>
+                                    </div>
+                                    <div className="kproject-text-icon">
+                                        <Link href="/gallery"><a><i><FontAwesomeIcon
+                                            icon={['fas', 'long-arrow-alt-right']}/></i></a></Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-md-6">
+                            <div className="kproject kproject-2 mb-30">
+                                <img src="assets/img/project/9.jpg" className="img-fluid" alt="project_img"/>
+                                <div className="kproject-text kproject-text-2">
+                                    <div className="kproject-text-content">
+                                        <span></span>
+                                        <h5 className="kproject-text-title"><Link href="/gallery"><a>Detalle</a></Link>
+                                        </h5>
+                                    </div>
+                                    <div className="kproject-text-icon">
+                                        <Link href="/gallery"><a><i><FontAwesomeIcon
+                                            icon={['fas', 'long-arrow-alt-right']}/></i></a></Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </TabPanel>
 

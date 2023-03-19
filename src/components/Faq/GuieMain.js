@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import Breadcrumb from '../Common/Breadcrumb';
-import FaqAccordion from './FaqAccordion';
 import FaqForm from './FaqFormSection';
+import Guie from './Guie'
 
 
-class FaqMain extends Component {
+class GuieMain extends Component {
 
     render() {
 
         return (
             <main>
                 {/* breadcrumb-start */}
-				<Breadcrumb pageTitle="Preguntas Frecuentes FAQ " />
+				<Breadcrumb pageTitle="Guía de usuario" />
 				{/* breadcrumb-end */}
 
                 {/* faq-start */}
-                <FaqAccordion />
+                <Guie />
 				{/* faq-end */}
 
                 {/* form-start */}
@@ -28,4 +28,4 @@ class FaqMain extends Component {
     }
 }
 
-export default FaqMain;
+export default GuieMain;

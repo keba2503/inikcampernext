@@ -10,8 +10,8 @@ class PricingMain extends Component {
 
         return (
             <main>
-                {/* breadcrumb-start */}
-				<Breadcrumb pageTitle="Pricing Plans" />
+                {/* breadcrumb-start *<Breadcrumb pageTitle="Pricing Plans" />/}
+
 				{/* breadcrumb-end */}
 
                 {/* pricing-start */}

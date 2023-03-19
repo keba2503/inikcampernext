@@ -1,26 +1,23 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+
 
 class Guie extends Component {
     state = {
         guideData: []
     }
-
+    
     fetchGuideData = async () => {
         try {
-            const response = await fetch('http://5.22.216.113:8000/api/guide_users', {
-                'mode': 'cors',
-                'headers': {
-                    'Access-Control-Allow-Origin': '*',
-                }
-            });
-            const data = await response.json();
+            const response = await axios.get('http://5.22.216.113:8000/api/guide_users');
+            const data = response.data;
             console.log(data['hydra:member']); // Aquí se muestra el resultado en la consola
             this.setState({ guideData: data['hydra:member'] });
         } catch (error) {
             console.log(error);
         }
     }
-
+    
     async componentDidMount() {
         await this.fetchGuideData();
     }

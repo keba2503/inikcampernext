@@ -7,7 +7,12 @@ class Guie extends Component {
 
     fetchGuideData = async () => {
         try {
-            const response = await fetch('http://localhost:8000/api/guide_users');
+            const response = await fetch('http://5.22.216.113:8000/api/guide_users', {
+                'mode': 'cors',
+                'headers': {
+                    'Access-Control-Allow-Origin': '*',
+                }
+            });
             const data = await response.json();
             console.log(data['hydra:member']); // Aquí se muestra el resultado en la consola
             this.setState({ guideData: data['hydra:member'] });

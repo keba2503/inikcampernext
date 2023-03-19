@@ -80,16 +80,16 @@ class Error extends React.Component {
                         </g>
                         <path id="Vector_56" d="M570.3 238.7C569.4 239.3 563.3 239.9 563.3 239.9L563.1 238.8L562 232.1L559.3 216.4L556.6 236.1L555.8 241.9C555.8 241.9 548.3 242.3 548.3 240.5C548.3 240.3 548.3 239.5 548.4 238.2C548.6 230.2 549.5 203.9 549.7 198C550 198.6 550.7 199 551.7 199.1C551.8 199.1 551.9 199.1 552 199.1C555.8 199.7 566.5 200.6 569.1 199.4C569.2 200.4 569.3 201.9 569.4 203.8C569.8 211.4 570.1 225.2 570.3 232.9C570.3 236.4 570.3 238.7 570.3 238.7Z" fill="#c58940" />
                         <path id="Vector_57" opacity="0.25" d="M562 232.1L559.3 216.4C559.3 216.4 560 210.1 560.3 209.3C560.6 208.6 562.5 209.1 563.3 208.6C563.7 209.6 561 211 560.8 214.3C560.7 216.6 561.5 226.7 562 232.1Z" fill="black" />
-                        <path id="Vector_58" opacity="0.25" d="M551.1 201.4C551.1 201.4 550.9 205 553.8 206.7" stroke="white" strokeWidth="0.4635" strokeMiterlimit="10" stroke-linecap="round" strokeLinejoin="round" />
+                        <path id="Vector_58" opacity="0.25" d="M551.1 201.4C551.1 201.4 550.9 205 553.8 206.7" stroke="white" strokeWidth="0.4635" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                         <g id="Group_11" opacity="0.25">
                           <g id="Group_12" opacity="0.25">
-                            <path id="Vector_59" opacity="0.25" d="M551.8 206.2L551.7 206.9" stroke="white" strokeWidth="0.4635" stroke-linecap="round" strokeLinejoin="round" />
-                            <path id="Vector_60" opacity="0.25" d="M551.7 208.2L550.3 238" stroke="white" strokeWidth="0.4635" stroke-linecap="round" strokeLinejoin="round" strokeDasharray="1.39 1.39" />
-                            <path id="Vector_61" opacity="0.25" d="M550.2 238.7V239.4" stroke="white" strokeWidth="0.4635" stroke-linecap="round" strokeLinejoin="round" />
+                            <path id="Vector_59" opacity="0.25" d="M551.8 206.2L551.7 206.9" stroke="white" strokeWidth="0.4635" strokeLinecap="round" strokeLinejoin="round" />
+                            <path id="Vector_60" opacity="0.25" d="M551.7 208.2L550.3 238" stroke="white" strokeWidth="0.4635" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1.39 1.39" />
+                            <path id="Vector_61" opacity="0.25" d="M550.2 238.7V239.4" stroke="white" strokeWidth="0.4635" strokeLinecap="round" strokeLinejoin="round" />
                           </g>
                         </g>
-                        <path id="Vector_62" opacity="0.25" d="M562 209.6L564.7 237.9" stroke="white" strokeWidth="0.4635" strokeMiterlimit="10" stroke-linecap="round" strokeLinejoin="round" strokeDasharray="1.39 1.39" />
-                        <path id="Vector_63" opacity="0.25" d="M564.3 201.9C564.3 201.9 564 205.4 564.3 206C564.6 206.7 565.9 207.2 566.2 207.4C566.5 207.5 567.7 206.4 567.8 205.7C567.9 205 567.9 202 567.9 202C567.9 202 565.7 201.6 564.3 201.9Z" stroke="white" strokeWidth="0.4635" strokeMiterlimit="10" stroke-linecap="round" strokeLinejoin="round" />
+                        <path id="Vector_62" opacity="0.25" d="M562 209.6L564.7 237.9" stroke="white" strokeWidth="0.4635" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1.39 1.39" />
+                        <path id="Vector_63" opacity="0.25" d="M564.3 201.9C564.3 201.9 564 205.4 564.3 206C564.6 206.7 565.9 207.2 566.2 207.4C566.5 207.5 567.7 206.4 567.8 205.7C567.9 205 567.9 202 567.9 202C567.9 202 565.7 201.6 564.3 201.9Z" stroke="white" strokeWidth="0.4635" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                         <path id="Vector_64" opacity="0.25" d="M570.3 238.7C569.4 239.3 563.3 239.9 563.3 239.9L563.1 238.8C564.9 237.8 568.4 235.6 570.2 232.9C570.3 236.4 570.3 238.7 570.3 238.7Z" fill="black" />
                         <path id="Vector_65" d="M570.7 241.3L569.9 241.4L564.5 242.2L564.1 242.3C563.3 242.4 562.6 241.9 562.4 241.1V241C562.3 240.2 562.8 239.5 563.6 239.3L570.2 238.3C571 238.2 571.7 238.7 571.9 239.5V239.6C572 240.4 571.5 241.2 570.7 241.3Z" fill="#4C3146" />
                         <path id="Vector_66" opacity="0.25" d="M556.7 236L555.9 241.8C555.9 241.8 548.4 242.2 548.4 240.4C548.4 240.2 548.4 239.4 548.5 238.1C550.2 238 554.3 237.5 556.7 236Z" fill="black" />
@@ -165,10 +165,10 @@ class Error extends React.Component {
                         </g>
                         <path id="Vector_109" opacity="0.25" d="M93.9 167.5C93.8 167.9 95.2 169.8 96.7 170.2C96.7 170.2 96.7 170.3 96.6 170.3C96.6 170.4 96.5 170.4 96.5 170.5C95.1 170 93.7 169.6 92.7 169.5C93.2 168.8 93.4 168 93 167.6C92.2 166.8 92.4 164.5 93.6 164.8C94.8 165.1 95 168.3 95.4 168.2C95.7 168.1 97.5 165.3 98.2 163.3C98.2 163.3 98.1 164.3 98 165.5C97.6 166.2 96.7 167.7 96 168.3C95.1 169.1 94.7 168.1 94.5 167.5C94.4 167 94 167 93.9 167.5Z" fill="black" />
                         <path id="Vector_110" opacity="0.25" d="M81.5 204.9C81.5 204.9 81.3 208.6 81.8 209.6C82.3 210.6 83.7 211.3 83.7 211.3C83.7 211.3 85.5 210.5 86 209.4C86.5 207.2 86.4 204.5 86.4 204.5C86.4 204.5 82.8 203.7 81.5 204.9Z" stroke="white" strokeWidth="0.4635" strokeMiterlimit="10" />
-                        <path id="Vector_111" opacity="0.25" d="M97.2 201.9C97.2 201.9 97.4 205 94.7 206.5" stroke="white" strokeWidth="0.4635" strokeMiterlimit="10" stroke-linecap="round" strokeLinejoin="round" />
-                        <path id="Vector_112" opacity="0.25" d="M96.5 204.6L98.7 241.6" stroke="white" strokeWidth="0.4635" strokeMiterlimit="10" stroke-linecap="round" strokeLinejoin="round" />
+                        <path id="Vector_111" opacity="0.25" d="M97.2 201.9C97.2 201.9 97.4 205 94.7 206.5" stroke="white" strokeWidth="0.4635" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                        <path id="Vector_112" opacity="0.25" d="M96.5 204.6L98.7 241.6" stroke="white" strokeWidth="0.4635" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                         <path id="Vector_113" opacity="0.25" d="M89.3 212C89.2 215.9 88.4 222.7 87.6 229.1C87.5 221.7 86.4 212.6 86.8 211.1C87.9 212.1 89.3 212 89.3 212Z" fill="black" />
-                        <path id="Vector_114" opacity="0.25" d="M87.4 213L84.3 243.2" stroke="white" strokeWidth="0.4635" strokeMiterlimit="10" stroke-linecap="round" strokeLinejoin="round" />
+                        <path id="Vector_114" opacity="0.25" d="M87.4 213L84.3 243.2" stroke="white" strokeWidth="0.4635" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                         <path id="Vector_115" opacity="0.25" d="M96.9 199.9C95.1 201.7 89.5 206.1 79.4 205.1C79.5 202.6 79.8 200.8 80 199.8C83.8 203.6 93.1 201.5 96.9 199.9Z" fill="black" />
                         <path id="Vector_116" opacity="0.25" d="M78.3 249.5H85.3C85.3 250.5 85.2 251 85.2 251H77.9C78 250.5 78.1 250 78.3 249.5Z" fill="black" />
                         <path id="Vector_117" opacity="0.25" d="M107.2 251C107.2 251 96.3 251 94.5 251C94.4 250.6 94.4 250.1 94.4 249.5H107.4C107.5 250.2 107.2 251 107.2 251Z" fill="black" />

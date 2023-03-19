@@ -4,10 +4,10 @@ class Guie extends Component {
     state = {
         guideData: []
     }
-    
+
     fetchGuideData = async () => {
         try {
-            const response = await fetch('http://5.22.216.113:8000/api/guide_users');
+            const response = await fetch('https://inikcamper.es/api/admin');
             const data = await response.json();
             console.log(data); // Aquí se muestra el resultado en la consola
             this.setState({ guideData: data});

@@ -9,7 +9,6 @@ class Guie extends Component {
         try {
             const response = await fetch('https://inikcamper.es/api/admin');
             const data = await response.json();
-            console.log(data); // Aquí se muestra el resultado en la consola
             this.setState({ guideData: data});
         } catch (error) {
             console.log(error);

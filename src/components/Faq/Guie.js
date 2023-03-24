@@ -7,7 +7,7 @@ class Guie extends Component {
 
     fetchGuideData = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/admin');
+            const response = await fetch('https://inikcamper.es/api/admin');
             const data = await response.json();
             this.setState({guideData: data});
         } catch (error) {

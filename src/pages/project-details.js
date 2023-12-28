@@ -5,7 +5,8 @@ import ProjectDetails from '../components/ProjectDetails/ProjectDetailsMain';
 
 class ProjectDetailsPage extends React.Component {
 
-    static getInitialProps({store}) {}
+    static getInitialProps({store}) {
+    }
 
     constructor(props) {
         super(props);
@@ -14,14 +15,13 @@ class ProjectDetailsPage extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <Header />
-            <ProjectDetails />
-            <Footer />
+                <Header/>
+                <ProjectDetails/>
+                <Footer/>
             </React.Fragment>
         );
     }
 }
-
 
 export default ProjectDetailsPage;
 

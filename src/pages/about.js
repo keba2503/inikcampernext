@@ -5,7 +5,8 @@ import AboutMain from '../components/About/AboutMain';
 
 class AboutPage extends React.Component {
 
-    static getInitialProps({store}) {}
+    static getInitialProps({store}) {
+    }
 
     constructor(props) {
         super(props);
@@ -14,9 +15,9 @@ class AboutPage extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <Header />
-            <AboutMain />
-            <Footer />
+                <Header/>
+                <AboutMain/>
+                <Footer/>
             </React.Fragment>
         );
     }

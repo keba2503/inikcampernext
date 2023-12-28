@@ -5,21 +5,18 @@ import Head from 'next/head';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import BurgerMenusTwoo from './BurgerMenusTwoo';
 import HeaderSearch from './HeaderSearch';
-import * as firebase from "firebase/auth";
-
 
 const Headerbooking = () => {
 
     const [menuOpen, setMenuOpen] = useState(false)
     const [searchOpen, setSearchOpen] = useState(false)
-
     const router = useRouter()
     const [path, setPath] = useState("")
+
     useEffect(() => {
         setPath(router.pathname)
     }, [router])
 
-    // Sticky Menu Area start
     useEffect(() => {
         window.addEventListener('scroll', sticky);
         return () => {
@@ -32,7 +29,6 @@ const Headerbooking = () => {
         const scrollTop = window.scrollY;
         scrollTop >= 1 ? header.classList.add('sticky-header') : header.classList.remove('sticky-header');
     };
-    // Sticky Menu Area End
 
     return (
         <React.Fragment>
@@ -70,8 +66,6 @@ const Headerbooking = () => {
                                                 <li className="menu-item-has-children"><Link
                                                     href="/service"><a>Servicios</a></Link>
                                                 </li>
-
-
                                                 <li><Link href="/blog"><a>Blog</a></Link></li>
                                                 <li><a href="https://www.yescapa.es/campers/57378/" target="_blank"
                                                        className="theme-btn theme-btn-small">Mis Reservas</a></li>

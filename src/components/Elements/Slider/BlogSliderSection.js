@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css/bundle';
 import Link from 'next/link';
 
 class BlogSlider extends Component {
-
     render() {
 
         return (
@@ -24,7 +22,7 @@ class BlogSlider extends Component {
                                     </div>
                                     <div className="kblog-arrow">
                                         <div className="blog-button-prev slide-prev"><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-left']} /></i></div>
-                                        <div className="blog-button-next slide-next"><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></div> 
+                                        <div className="blog-button-next slide-next"><i><FontAwesomeIcon icon={['fas', 'long-arrow-alt-right']} /></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -63,8 +61,6 @@ class BlogSlider extends Component {
                                                 nextEl: '.blog-button-next',
                                                 prevEl: '.blog-button-prev',
                                         }}
-                                            // pagination={{ clickable: true }}
-                                            // scrollbar={{ draggable: true }}
                                             onSwiper={(swiper) => console.log(swiper)}
                                             onSlideChange={() => console.log('slide change')}
                                         >

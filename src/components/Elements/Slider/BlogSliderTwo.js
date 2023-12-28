@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css/bundle'
 import Link from 'next/link';
 
@@ -39,9 +38,6 @@ class BlogSliderTwo extends Component {
                         delay: 3000,
                         disableOnInteraction: true
                     }}
-                    // pagination={{ clickable: true }}
-                    // scrollbar={{ draggable: true }}
-                    // navigation={{ clickable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
                 >

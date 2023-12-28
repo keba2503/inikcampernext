@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Breadcrumb from '../Common/Breadcrumb';
 import Experience from './ExperienceSection';
 import PortPagination from './PortPagination';
 import RecentWork from './RecentWorkSection';
-
 
 class ProjectDetails extends Component {
 
@@ -11,22 +10,11 @@ class ProjectDetails extends Component {
 
         return (
             <main>
-                {/* breadcrumb-start */}
-				<Breadcrumb pageTitle="Project Details" />
-				{/* breadcrumb-end */}
-
-                {/* experience-start */}
-               <Experience />
-				{/* experience-end */}
-
-                {/* testimonial-start */}
-                <PortPagination />
-				{/* testimonial-end */}
-
-                {/* fact-start */}
-				<RecentWork />
-				{/* fact-end */}
-        	</main>
+                <Breadcrumb pageTitle="Project Details"/>
+                <Experience/>
+                <PortPagination/>
+                <RecentWork/>
+            </main>
         );
     }
 }

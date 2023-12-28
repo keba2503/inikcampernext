@@ -5,7 +5,8 @@ import ContactMain from '../components/Contact/ContactMain';
 
 class ContactPage extends React.Component {
 
-    static getInitialProps({store}) {}
+    static getInitialProps({store}) {
+    }
 
     constructor(props) {
         super(props);
@@ -14,14 +15,13 @@ class ContactPage extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <Header />
-            <ContactMain />
-            <Footer />
+                <Header/>
+                <ContactMain/>
+                <Footer/>
             </React.Fragment>
         );
     }
 }
-
 
 export default ContactPage;
 

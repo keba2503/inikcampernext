@@ -6,7 +6,8 @@ import Script from 'next/script'
 
 class Index extends React.Component {
 
-    static getInitialProps({ store }) { }
+    static getInitialProps({store}) {
+    }
 
     constructor(props) {
         super(props);
@@ -15,15 +16,14 @@ class Index extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Script type="text/javascript" src='https://embed.tawk.to/61fb0b1b9bd1f31184daaa3c/1fqua6ov3' />
-                <Header />
-                <HomeMain />
-                <Footer />
+                <Script type="text/javascript" src='https://embed.tawk.to/61fb0b1b9bd1f31184daaa3c/1fqua6ov3'/>
+                <Header/>
+                <HomeMain/>
+                <Footer/>
             </React.Fragment>
         );
     }
 }
-
 
 export default Index;
 

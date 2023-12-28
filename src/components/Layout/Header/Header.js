@@ -17,7 +17,6 @@ const Header = () => {
       setPath(router.pathname)
    }, [router])
 
-   // Sticky Menu Area start
    useEffect(() => {
       window.addEventListener('scroll', sticky);
       return () => {
@@ -30,7 +29,6 @@ const Header = () => {
       const scrollTop = window.scrollY;
       scrollTop >= 1 ? header.classList.add('sticky-header') : header.classList.remove('sticky-header');
    };
-   // Sticky Menu Area End
 
    return (
       <React.Fragment>
@@ -65,11 +63,8 @@ const Header = () => {
                                     </li>
                                     <li className="menu-item-has-children"><Link href="/service"><a>Servicios</a></Link>
                                     </li>
-
-                                   
                                     <li><Link href="/blog"><a>Blog</a></Link></li>
                                     <li><a href="https://www.yescapa.es/campers/57378/" target="_blank" className="theme-btn theme-btn-small">Mis Reservas</a></li>
-
                                  </ul>
                               </nav>
                            </div>
@@ -85,30 +80,22 @@ const Header = () => {
                                  <a href="https://www.instagram.com/inikcamper" target="_blank"><i><FontAwesomeIcon icon={['fab', 'instagram']} /></i></a>
                                  <a href="https://www.twitter.com/inikcamper" target="_blank"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a>
                                  <a href="https://www.facebook.com/InikCamper-113925204533049" target="_blank"><i><FontAwesomeIcon icon={['fab', 'facebook']} /></i></a>
-
                               </div>
                               <div className="header-search">
                                  <a className="search-btn nav-search search-trigger" href="#!" onClick={() => { setSearchOpen(!searchOpen) }}><i><FontAwesomeIcon icon={['fas', 'search']} /></i></a>
                               </div>
-
                               <div className="header-btn">
                               </div>
-
                            </div>
-
                         </div>
-
                      </div>
                   </div>
                </div>
             </div>
-
             <BurgerMenus menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <div onClick={() => setMenuOpen(false)} className={menuOpen ? "body-overlay show" : "body-overlay"}></div>
-
             <HeaderSearch searchOpen={searchOpen} setSearchOpen={setSearchOpen} />
             <div onClick={() => setSearchOpen(false)} className={searchOpen ? "body-overlay show" : "body-overlay"}></div>
-
          </header>
       </React.Fragment>
    );

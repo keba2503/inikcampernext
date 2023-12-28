@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Breadcrumb from '../Common/Breadcrumb';
 import ServiceDetails from './ServiceDetails';
-
 
 class ServiceDetailsMain extends Component {
 
@@ -9,15 +8,9 @@ class ServiceDetailsMain extends Component {
 
         return (
             <main>
-                {/* breadcrumb-start */}
-				<Breadcrumb pageTitle="Services Details" />
-				{/* breadcrumb-end */}
-
-                {/* service-start */}
-                <ServiceDetails />
-				{/* service-end */}
-
-        	</main>
+                <Breadcrumb pageTitle="Services Details"/>
+                <ServiceDetails/>
+            </main>
         );
     }
 }

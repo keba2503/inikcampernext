@@ -41,8 +41,7 @@ class Guie extends Component {
                                                         {guide.nombre}
                                                     </button>
                                                 </h2>
-                                                <div id={"collapse" + guide.id} className="accordion-collapse collapse"
-                                                     aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div id={"collapse" + guide.id} className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                                     <div className="accordion-body">
                                                         <p className='Text-guie'>
                                                             {guide.texto_inicial}
@@ -56,8 +55,7 @@ class Guie extends Component {
                                                         <p className='Text-guie'>
                                                             {guide.texto_adicional3}
                                                         </p>
-                                                        <a href={guide.link_reference}
-                                                           target="_blank">{guide.link_reference}</a>
+                                                        <a href={guide.link_reference} target="_blank">{guide.link_reference}</a>
                                                     </div>
                                                 </div>
                                             </div>

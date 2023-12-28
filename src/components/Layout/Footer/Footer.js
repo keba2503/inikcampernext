@@ -2,7 +2,6 @@ import React from 'react';
 import FooterBottom from './FooterBottom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import { Contact } from '../../Contact/contact';
 
 const Footer = () => {
 
@@ -57,11 +56,7 @@ const Footer = () => {
                </div>
             </div>
          </div>
-
-
          <FooterBottom />
-
-
       </footer>
    );
 }

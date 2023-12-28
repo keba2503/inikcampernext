@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css/bundle';
 import Link from 'next/link';
 
@@ -43,10 +41,6 @@ class ProjectSlider extends Component {
                         nextEl: '.project-button-next',
                         prevEl: '.project-button-prev',
                    }}
-                    // pagination={{ clickable: true }}
-                    // scrollbar={{ draggable: true }}
-                    // onSwiper={(swiper) => console.log(swiper)}
-                    // onSlideChange={() => console.log("slide change")}
                 >
                     <SwiperSlide>
                         <div className="kproject swiper-slide">

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Carousel from "react-elastic-carousel";
 
-
 class ServiceThree extends Component {
 
     render() {

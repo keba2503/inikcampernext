@@ -5,7 +5,8 @@ import ServiceDetailsMain from '../components/ServiceDetails/ServiceDetailsMain'
 
 class ServiceDetailsPage extends React.Component {
 
-    static getInitialProps({store}) {}
+    static getInitialProps({store}) {
+    }
 
     constructor(props) {
         super(props);
@@ -14,9 +15,9 @@ class ServiceDetailsPage extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <Header />
-            <ServiceDetailsMain />
-            <Footer />
+                <Header/>
+                <ServiceDetailsMain/>
+                <Footer/>
             </React.Fragment>
         );
     }

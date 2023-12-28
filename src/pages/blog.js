@@ -5,7 +5,8 @@ import BlogMain from '../components/Blog/BlogMain';
 
 class BlogPage extends React.Component {
 
-    static getInitialProps({store}) {}
+    static getInitialProps({store}) {
+    }
 
     constructor(props) {
         super(props);
@@ -14,14 +15,13 @@ class BlogPage extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <Header />
-            <BlogMain />
-            <Footer />
+                <Header/>
+                <BlogMain/>
+                <Footer/>
             </React.Fragment>
         );
     }
 }
-
 
 export default BlogPage;
 

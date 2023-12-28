@@ -87,7 +87,7 @@ const BurgerMenus = ({ setMenuOpen, menuOpen }) => {
                 <li><img src="assets/img/icon/footer-icon-2.png" className="img-fluid" alt="icon-img" /><a href="tel:926668880000">Proximamente</a></li>
               </ul>
               <div className="sidebar__menu--social">
-                <a href="https://www.instagram.com/inikcamper/" target="_blank"><i><FontAwesomeIcon icon={['fab', 'instagram']} /></i></a>
+                <a href="https://www.instagram.com/inikcamper.es/" target="_blank"><i><FontAwesomeIcon icon={['fab', 'instagram']} /></i></a>
                 <a href="https://wa.me/34684198547" target="_blank"><i><FontAwesomeIcon id="whatsaap" icon={['fab', 'whatsapp']} /></i></a>
                 <a href="https://twitter.com/inikcamper" target="_blank"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a>
                 <a href="https://www.facebook.com/InikCamper-113925204533049" target="_blank"><i><FontAwesomeIcon icon={['fab', 'facebook']} /></i></a>

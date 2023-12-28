@@ -87,9 +87,9 @@ const Headerbooking = () => {
                                         <div className="header-social">
                                             <a href="https://wa.me/34684198547" target="_blank"><i><FontAwesomeIcon
                                                 id="whatsaap" icon={['fab', 'whatsapp']}/></i></a>
-                                            <a href="https://www.instagram.com/inikcamper"
+                                            <a href="https://www.instagram.com/inikcamper.es"
                                                target="_blank"><i><FontAwesomeIcon icon={['fab', 'instagram']}/></i></a>
-                                            <a href="https://www.twitter.com/inikcamper"
+                                            <a href="https://www.twitter.com/inikcamper.es"
                                                target="_blank"><i><FontAwesomeIcon icon={['fab', 'twitter']}/></i></a>
                                             <a href="https://www.facebook.com/InikCamper-113925204533049"
                                                target="_blank"><i><FontAwesomeIcon icon={['fab', 'facebook']}/></i></a>

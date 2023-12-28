@@ -5,7 +5,8 @@ import FaqMain from '../components/Faq/FaqMain';
 
 class FaqPage extends React.Component {
 
-    static getInitialProps({store}) {}
+    static getInitialProps({store}) {
+    }
 
     constructor(props) {
         super(props);
@@ -14,14 +15,13 @@ class FaqPage extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <Header />
-            <FaqMain /> 
-            <Footer />
+                <Header/>
+                <FaqMain/>
+                <Footer/>
             </React.Fragment>
         );
     }
 }
-
 
 export default FaqPage;
 

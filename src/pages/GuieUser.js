@@ -5,7 +5,8 @@ import GuieMain from '../components/Faq/GuieMain';
 
 class FaqPage extends React.Component {
 
-    static getInitialProps({store}) {}
+    static getInitialProps({store}) {
+    }
 
     constructor(props) {
         super(props);
@@ -14,14 +15,13 @@ class FaqPage extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <Header />
-            <GuieMain /> 
-            <Footer />
+                <Header/>
+                <GuieMain/>
+                <Footer/>
             </React.Fragment>
         );
     }
 }
-
 
 export default FaqPage;
 

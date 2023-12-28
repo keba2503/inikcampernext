@@ -5,7 +5,8 @@ import Footer from '../components/Layout/Footer/Footer';
 
 class BlogDetails extends React.Component {
 
-    static getInitialProps({ store }) { }
+    static getInitialProps({store}) {
+    }
 
     constructor(props) {
         super(props);
@@ -14,17 +15,14 @@ class BlogDetails extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Header />
+                <Header/>
                 <main>
-                    {/* Blog Main */}
-                    <BlogDetailsMain />
-                    {/* Blog Main End */}
+                    <BlogDetailsMain/>
                 </main>
-                <Footer />
+                <Footer/>
             </React.Fragment>
         );
     }
 }
-
 
 export default BlogDetails;

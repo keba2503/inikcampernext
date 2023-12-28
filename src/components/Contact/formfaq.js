@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from 'react'
+import React, {useState} from "react";
 import emailjs from 'emailjs-com'
 
 const initialState = {
@@ -9,15 +8,15 @@ const initialState = {
 }
 
 export const Formfaq = (props) => {
-    const [{ name, email, message }, setState] = useState(initialState)
+    const [{name, email, message}, setState] = useState(initialState)
 
     const handleChange = (e) => {
-        const { name, value } = e.target
-        setState((prevState) => ({ ...prevState, [name]: value }))
+        const {name, value} = e.target
+        setState((prevState) => ({...prevState, [name]: value}))
     }
-    const clearState = () => { document.getElementById("contact-form").reset(); }
-
- 
+    const clearState = () => {
+        document.getElementById("contact-form").reset();
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -35,47 +34,44 @@ export const Formfaq = (props) => {
                     console.log(error.text)
                 }
             )
-            }
+    }
 
-        return (
-            
-                <section className="faq-form pt-110 pb-100">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="faq-form-title-wrapper text-center">
-                                    <h3 className="faq-form-title">Alguna Duda que quieras Consultar con Nosotros</h3>
-                                </div>
-                            </div>
+    return (
+        <section className="faq-form pt-110 pb-100">
+            <div className="container">
+                <div className="row">
+                    <div className="col-12">
+                        <div className="faq-form-title-wrapper text-center">
+                            <h3 className="faq-form-title">Alguna Duda que quieras Consultar con Nosotros</h3>
                         </div>
-                        <div className="row justify-content-center">
-                            <div className="col-lg-8">
-                                <div className="contact-form">
-                                    <form name='sentMessage' id="contact-form" onSubmit={handleSubmit}>
-                                        <div className="row">
-                                            <div className="col-xxl-6 col-xl-6 col-md-6 mb-20">
-                                                <input
-                                                    type='text'
-                                                    id='name'
-                                                    name='name'
-                                                    className='form-control'
-                                                    placeholder='Name'
-                                                    required
-                                                    onChange={handleChange}
-                                                />
-                                            </div>
-                                            <div className="col-xxl-6 col-xl-6 col-md-6 mb-20">
-                                                <input
-                                                    type='email'
-                                                    id='email'
-                                                    name='email'
-                                                    className='form-control'
-                                                    placeholder='Email'
-                                                    required
-                                                    onChange={handleChange} />
-                                            </div>
-                                      
-                                            <div className="col-xxl-12 col-xl-12 col-md-12 mb-20">
+                    </div>
+                </div>
+                <div className="row justify-content-center">
+                    <div className="col-lg-8">
+                        <div className="contact-form">
+                            <form name='sentMessage' id="contact-form" onSubmit={handleSubmit}>
+                                <div className="row">
+                                    <div className="col-xxl-6 col-xl-6 col-md-6 mb-20">
+                                        <input
+                                            type='text'
+                                            id='name'
+                                            name='name'
+                                            className='form-control'
+                                            placeholder='Name'
+                                            required
+                                            onChange={handleChange}/>
+                                    </div>
+                                    <div className="col-xxl-6 col-xl-6 col-md-6 mb-20">
+                                        <input
+                                            type='email'
+                                            id='email'
+                                            name='email'
+                                            className='form-control'
+                                            placeholder='Email'
+                                            required
+                                            onChange={handleChange}/>
+                                    </div>
+                                    <div className="col-xxl-12 col-xl-12 col-md-12 mb-20">
                                                 <textarea
                                                     name='message'
                                                     id='message'
@@ -83,20 +79,20 @@ export const Formfaq = (props) => {
                                                     rows='4'
                                                     placeholder='Message'
                                                     required
-                                                    onChange={handleChange}
-                                                ></textarea>
-                                            </div>
-                                            <div className="col-xxl-12 col-xl-12 mb-20">
-                                                <button type="submit" className="theme-btn border-btn">Enviar</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <p className="ajax-response"></p>
+                                                    onChange={handleChange}>
+
+                                                </textarea>
+                                    </div>
+                                    <div className="col-xxl-12 col-xl-12 mb-20">
+                                        <button type="submit" className="theme-btn border-btn">Enviar</button>
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
+                            <p className="ajax-response"></p>
                         </div>
                     </div>
-                </section>
-            
-        )
-    }
+                </div>
+            </div>
+        </section>
+    )
+}

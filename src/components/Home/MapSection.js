@@ -5,9 +5,6 @@ class Map extends Component {
     render() {
 
         return (
-
-
-
             <div className="map-area">
                 <div className="section-title-wrapper mb-45 text-center">
                     <br/>
@@ -20,7 +17,7 @@ class Map extends Component {
                     <br/>
                     <h3 className="section-title mb-35">Mapa Recomendado - Gran Canaria</h3>
                 </div>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1CCn7O6uUoBbWwVTTF5EJW7-MZxV49po&hl=es&ehbc=2E312F"  loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1CCn7O6uUoBbWwVTTF5EJW7-MZxV49po&hl=es&ehbc=2E312F" loading="lazy"></iframe>
             </div>
         );
     }

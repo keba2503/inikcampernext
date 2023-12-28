@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css/bundle'
 import Link from 'next/link';
 
@@ -41,8 +38,6 @@ class TeamSlider extends Component {
                             delay: 3000,
                             disableOnInteraction: true
                         }}
-                        // pagination={{ clickable: true }}
-                        // scrollbar={{ draggable: true }}
                         navigation={{ clickable: true }}
                         onSwiper={(swiper) => console.log(swiper)}
                         onSlideChange={() => console.log('slide change')}
@@ -59,7 +54,6 @@ class TeamSlider extends Component {
                                 </div>
                             </div>
                         </SwiperSlide>
-
                         <SwiperSlide>
                             <div className="kteam swiper-slide mb-30">
                                 <div className="kteam-img">
@@ -72,7 +66,6 @@ class TeamSlider extends Component {
                                 </div>
                             </div>
                         </SwiperSlide>
-
                         <SwiperSlide>
                             <div className="kteam swiper-slide mb-30">
                                 <div className="kteam-img">
@@ -85,7 +78,6 @@ class TeamSlider extends Component {
                                 </div>
                             </div>
                         </SwiperSlide>
-
                         <SwiperSlide>
                             <div className="kteam swiper-slide mb-30">
                                 <div className="kteam-img">
@@ -98,8 +90,6 @@ class TeamSlider extends Component {
                                 </div>
                             </div>
                         </SwiperSlide>
-
-
                     </Swiper>
                 </div>
             </div>

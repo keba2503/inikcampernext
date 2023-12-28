@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, {Component} from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 class BlogSidebarSearch extends Component {
 
@@ -9,7 +9,9 @@ class BlogSidebarSearch extends Component {
             <div className="sidebar-search-from mb-30">
                 <form action="#">
                     <input type="text" placeholder="Search here"/>
-                    <button type="submit"><i><FontAwesomeIcon icon={['fas', 'search']} /></i></button>
+                    <button type="submit">
+                        <i><FontAwesomeIcon icon={['fas', 'search']}/></i>
+                    </button>
                 </form>
             </div>
         );

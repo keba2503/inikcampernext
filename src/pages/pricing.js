@@ -5,7 +5,8 @@ import PricingMain from '../components/Pricing/PricingMain';
 
 class PricingPage extends React.Component {
 
-    static getInitialProps({store}) {}
+    static getInitialProps({store}) {
+    }
 
     constructor(props) {
         super(props);
@@ -14,14 +15,13 @@ class PricingPage extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <Header />
-            <PricingMain />
-            <FooterTwo />
+                <Header/>
+                <PricingMain/>
+                <FooterTwo/>
             </React.Fragment>
         );
     }
 }
-
 
 export default PricingPage;
 

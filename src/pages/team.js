@@ -6,14 +6,14 @@ import Breadcrumb from '../components/Common/Breadcrumb';
 import TeamTwo from '../components/About/TeamSectionTwo';
 import WhyWeTwo from '../components/About/WhyWeSectionTwo';
 
-
 const BrandFour = dynamic(() => import('../components/Elements/Brand/BrandSectionFour'), {
     ssr: false
 })
 
 class ServicePage extends React.Component {
 
-    static getInitialProps({ store }) { }
+    static getInitialProps({store}) {
+    }
 
     constructor(props) {
         super(props);
@@ -22,15 +22,14 @@ class ServicePage extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Header />
-                <Breadcrumb pageTitle="Nuestro equipo" />
+                <Header/>
+                <Breadcrumb pageTitle="Nuestro equipo"/>
                 <WhyWeTwo/>
-                <TeamTwo />
-                <Footer />
+                <TeamTwo/>
+                <Footer/>
             </React.Fragment>
         );
     }
 }
-
 
 export default ServicePage;

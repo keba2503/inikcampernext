@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, } from 'swiper';
-
-// Import Swiper styles
 import 'swiper/css/bundle'
 
 class BrandTwo extends Component {
-
     render() {
 
         return (

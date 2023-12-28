@@ -14,11 +14,11 @@ const HeaderTwo = () => {
 
 	const router = useRouter()
 	const [path, setPath] = useState("")
+
 	useEffect(() => {
 		setPath(router.pathname)
 	}, [router])
 
-    // Sticky Menu Area start
     useEffect(() => {
         window.addEventListener('scroll', sticky);
         return () => {
@@ -31,7 +31,6 @@ const HeaderTwo = () => {
         const scrollTop = window.scrollY; 
         scrollTop >= 37 ? header.classList.add('sticky-header') : header.classList.remove('sticky-header');
     };
-    // Sticky Menu Area End
 
 	return (
 		<React.Fragment>
@@ -122,10 +121,8 @@ const HeaderTwo = () => {
 
         <BurgerMenusTwoo menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <div onClick={() => setMenuOpen(false)} className={menuOpen ? "body-overlay show" : "body-overlay"}></div>
-
         <HeaderSearch searchOpen={searchOpen} setSearchOpen={setSearchOpen} />
         <div onClick={() => setSearchOpen(false)} className={searchOpen ? "body-overlay show" : "body-overlay"}></div>
-
 		</React.Fragment>
 	);
 }

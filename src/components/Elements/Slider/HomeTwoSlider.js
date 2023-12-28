@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, } from 'swiper';
 import { EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css/bundle';
 import Link from 'next/link';
 
@@ -38,10 +37,6 @@ class HomeTwoSlider extends Component {
                                disableOnInteraction: true
                            }}
                             pagination={{ clickable: true }}
-                            // scrollbar={{ draggable: true }}
-                            // navigation={{ clickable: true }}
-                            // onSwiper={(swiper) => console.log(swiper)}
-                            // onSlideChange={() => console.log('slide change')}
                         >
                         <SwiperSlide>
                         <div className="single-slider slider-height-2 swiper-slide d-flex align-items-center" data-swiper-autoplay="10000">

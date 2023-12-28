@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
-import Breadcrumb from '../Common/Breadcrumb';
+import React, {Component} from 'react';
 import CtaTwo from '../HomeTwo/CtaTwoSection';
 import Pricing from './PricingSection';
-
 
 class PricingMain extends Component {
 
@@ -10,18 +8,9 @@ class PricingMain extends Component {
 
         return (
             <main>
-                {/* breadcrumb-start *<Breadcrumb pageTitle="Pricing Plans" />/}
-
-				{/* breadcrumb-end */}
-
-                {/* pricing-start */}
-                <Pricing />
-				{/* pricing-end */}
-
-                {/* pricing-start */}
-                <CtaTwo />
-                {/* pricing-end */}
-        	</main>
+                <Pricing/>
+                <CtaTwo/>
+            </main>
         );
     }
 }

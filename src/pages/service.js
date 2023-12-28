@@ -6,7 +6,6 @@ import dynamic from 'next/dynamic';
 import Breadcrumb from '../components/Common/Breadcrumb';
 import {Formfaq} from '../components/Contact/formfaq'
 
-
 const BrandFour = dynamic(() => import('../components/Elements/Brand/BrandSectionFour'), {
     ssr: false
 })
@@ -32,7 +31,6 @@ class ServicePage extends React.Component {
         );
     }
 }
-
 
 export default ServicePage;
 

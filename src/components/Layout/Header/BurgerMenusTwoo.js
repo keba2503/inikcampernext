@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import * as firebase from "firebase/auth";
 
-
 const BurgerMenusTwoo = ({ setMenuOpen, menuOpen }) => {
 
   const [home, setHome] = useState(false)
@@ -12,9 +11,9 @@ const BurgerMenusTwoo = ({ setMenuOpen, menuOpen }) => {
   const [blog, setBlog] = useState(false)
   const [pages, setPages] = useState(false)
   const [project, setProject] = useState(false)
-
   const router = useRouter()
   const [path, setPath] = useState("")
+
   useEffect(() => {
     setPath(router.pathname)
   }, [router])
@@ -94,15 +93,12 @@ const BurgerMenusTwoo = ({ setMenuOpen, menuOpen }) => {
                 <a href="https://wa.me/34684198547" target="_blank"><i><FontAwesomeIcon id="whatsaap" icon={['fab', 'whatsapp']} /></i></a>
                 <a href="https://twitter.com/inikcamper" target="_blank"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a>
                 <a href="https://www.facebook.com/InikCamper-113925204533049" target="_blank"><i><FontAwesomeIcon icon={['fab', 'facebook']} /></i></a>
-
-
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   )
 }
 

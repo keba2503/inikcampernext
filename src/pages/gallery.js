@@ -5,7 +5,8 @@ import ProjectMain from '../components/Project/ProjectMain';
 
 class ProjectPage extends React.Component {
 
-    static getInitialProps({store}) {}
+    static getInitialProps({store}) {
+    }
 
     constructor(props) {
         super(props);
@@ -14,14 +15,13 @@ class ProjectPage extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <Header />
-            <ProjectMain />
-            <Footer />
+                <Header/>
+                <ProjectMain/>
+                <Footer/>
             </React.Fragment>
         );
     }
 }
-
 
 export default ProjectPage;
 

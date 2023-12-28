@@ -1,12 +1,7 @@
-import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
 import axios from 'axios';
-import { Form } from 'react-bootstrap';
-
 
 export default function ContactSection() {
-
-
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -24,12 +19,10 @@ export default function ContactSection() {
             fechaini: e.target.dateini.value,
             fechafin: e.target.datefin.value,
         })
-        console.log({ formData })
+        console.log({formData})
     }
 
-
     return (
-
         <section className="contact-area pt-120 pb-80 fix">
             <div className="container">
                 <div className="row">
@@ -39,41 +32,36 @@ export default function ContactSection() {
                             <h2 className="section-title">Prueba
                             </h2>
                         </div>
-
                     </div>
-
                     <div className="col-xxl-7 col-xl-6 col-lg-6">
                         <div className="contact-form">
                             <form action="input" id="contact-form" method="POST" onSubmit={handleSubmit}>
                                 <div className="row">
                                     <div className="col-xxl-6 col-xl-6 col-lg-6 mb-20">
-                                        <input name="name" type="text" placeholder="Your Name" />
+                                        <input name="name" type="text" placeholder="Your Name"/>
                                     </div>
                                     <div className="col-xxl-6 col-xl-6 col-lg-6 mb-20">
-                                        <input name="comment" type="text" placeholder="comment" />
+                                        <input name="comment" type="text" placeholder="comment"/>
                                     </div>
                                     <div className="col-xxl-6 col-xl-6 col-lg-6 mb-20">
                                         <label>Fecha Inicio</label>
-                                        <input name="dateini" type="date" placeholder="Fecha inicio" />
+                                        <input name="dateini" type="date" placeholder="Fecha inicio"/>
                                     </div>
                                     <div className="col-xxl-6 col-xl-6 col-lg-6 mb-20">
                                         <label>Fecha Fin</label>
-                                        <input name="datefin" type="date" placeholder="Fecha fin" />
+                                        <input name="datefin" type="date" placeholder="Fecha fin"/>
                                     </div>
                                     <div className="col-xxl-12 col-xl-12 mb-20">
                                         <button type="submit" className="theme-btn border-btn">Send a message</button>
                                     </div>
                                 </div>
                             </form>
-
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     );
-
 }
 
 

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Link from 'next/link';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 class Pricing extends Component {
 
@@ -10,7 +9,6 @@ class Pricing extends Component {
             <section className="pricing-area pt-120 pb-90 fix">
                 <div className="container">
                     <nav className="text-center wow fadeInUp mb-40" data-wow-delay=".4s">
-
                     </nav>
                     <div className="tab-content" id="nav-tabContent">
                         <div className="tab-pane fade show active" id="nav-home" role="tabpanel"
@@ -31,18 +29,11 @@ class Pricing extends Component {
                                             <div className="pricing-btn">
                                                 <Link href="/"><a className="theme-btn">Disponibilidad</a></Link>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
-
-
                         </div>
-
-
                     </div>
                 </div>
             </section>

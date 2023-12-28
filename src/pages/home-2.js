@@ -5,7 +5,8 @@ import FooterTwo from '../components/Layout/Footer/FooterTwo';
 
 class HomeTwo extends React.Component {
 
-    static getInitialProps({store}) {}
+    static getInitialProps({store}) {
+    }
 
     constructor(props) {
         super(props);
@@ -14,14 +15,13 @@ class HomeTwo extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <HeaderTwo />
-            <HomeTwoMain />
-            <FooterTwo />
+                <HeaderTwo/>
+                <HomeTwoMain/>
+                <FooterTwo/>
             </React.Fragment>
         );
     }
 }
-
 
 export default HomeTwo;
 

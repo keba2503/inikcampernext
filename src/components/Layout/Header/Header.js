@@ -57,14 +57,14 @@ const Header = () => {
                                           <li><Link href="/about"><a>Quienes Somos</a></Link></li>
                                           <li><Link href="/team"><a>Nuestro Equipo</a></Link></li>
                                           <li><Link href="/faq"><a>Preguntas Frecuentes FAQ</a></Link></li>
-                                          <li><Link href="/GuieUser"><a>Guía de usuario</a></Link></li>
-
                                        </ul>
                                     </li>
                                     <li className="menu-item-has-children"><Link href="/service"><a>Servicios</a></Link>
                                     </li>
+                                    <li><Link href="/GuieUser"><a>Guía de usuario</a></Link></li>
                                     <li><Link href="/blog"><a>Blog</a></Link></li>
-                                    <li><a href="https://www.yescapa.es/campers/57378/" target="_blank" className="theme-btn theme-btn-small">Mis Reservas</a></li>
+                                    <li><a href="https://www.yescapa.es/campers/57378/" target="_blank"
+                                           className="theme-btn theme-btn-small">Mis Reservas</a></li>
                                  </ul>
                               </nav>
                            </div>

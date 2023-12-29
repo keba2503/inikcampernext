@@ -65,17 +65,19 @@ const BurgerMenus = ({ setMenuOpen, menuOpen }) => {
             <ul>
               <li><Link href="/"><a>Inicio</a></Link></li>
               <li className={courses ? "has-droupdown active" : "has-droupdown"}>
-                <a onClick={() => { openMobileMenu('courses'); }}>Nosotros</a>
+                <a onClick={() => {
+                  openMobileMenu('courses');
+                }}>Nosotros</a>
                 <ul className={courses ? "sub-menu active" : "sub-menu"}>
                   <li><Link href="/about"><a>Quienes Somos</a></Link></li>
                   <li><Link href="/team"><a>Nuestro Equipo</a></Link></li>
                   <li><Link href="/faq"><a>Preguntas Frecuentes</a></Link></li>
-                  <li><Link href="/GuieUser"><a>Guia de usuario</a></Link></li>
+                  <li><Link href="/blog"><a>Blog</a></Link></li>
                 </ul>
               </li>
               <li><Link href="/service"><a>Servicios</a></Link></li>
-              <li><Link href="/blog"><a>Blog</a></Link></li>
-              <li><a href="https://www.yescapa.es/campers/57378/"  target="_blank">Reservas</a></li>
+              <li><Link href="/GuieUser"><a>Guia de usuario</a></Link></li>
+              <li><a href="https://www.yescapa.es/campers/57378/" target="_blank">Reservas</a></li>
             </ul>
           </div>
           <div className="contact-infos mb-30">

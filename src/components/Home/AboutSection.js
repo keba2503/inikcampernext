@@ -19,8 +19,7 @@ class About extends Component {
                         <div className="col-lg-6">
                             <div className="kabout mb-50" data-aos="zoom-out-down" data-swiper-autoplay="10000">
                                 <div className="section-title-wrapper mb-45">
-                                    <h5 className="section-subtitle mb-20"></h5>
-                                    <h1 className="section-title mb-35">Quienes Somos <br/></h1>
+                                    <h1 className="section-title mb-35">Quienes Somos <br/> InikCamper</h1>
                                     <p>Somos Aventura, Momentos, Experiencias y Recuerdos.</p>
                                 </div>
                                 <div className="row">

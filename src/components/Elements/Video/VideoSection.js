@@ -53,7 +53,6 @@ class Video extends Component {
                         <div className="row">
                             <div className="col-12">
                                 <div className="section-title-wrapper mb-45 text-center">
-                                    <h5 className="section-subtitle mb-20"></h5>
                                     <h2 className="section-title mb-35">InikCamper</h2>
                                 </div>
                             </div>

@@ -5,6 +5,8 @@ import Head from 'next/head';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import BurgerMenus from './BurgerMenus';
 import HeaderSearch from './HeaderSearch';
+import { Helmet } from 'react-helmet';
+
 
 const Header = () => {
 
@@ -36,9 +38,28 @@ const Header = () => {
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
             <title>InikCamper – Alquiler de autocaravanas, Campervan, camper, furgonetas</title>
          </Head>
+         <Helmet>
+            <link rel="icon" type="image/png" href="/assets/img/icon/camper-van.png" />
+            {/* Metaetiquetas para SEO */}
+            <meta name="description" content="Alquiler de autocaravanas y furgonetas camper en Gran Canaria. Ofrecemos servicios de camperización y alquiler de vehículos para explorar la isla." />
+            <meta name="keywords" content="autocaravanas, campervan, furgonetas, camperización, alquiler, Gran Canaria, Las Palmas, viajes, aventuras" />
+            <meta name="author" content="InikCamper" />
+
+            {/* Etiqueta viewport para controlar el diseño en dispositivos móviles */}
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+            {/* Etiqueta canonical para indicar la URL canónica de la página */}
+            <link rel="canonical" href="https://inikcamper.es/" />
+
+            {/* Etiqueta Open Graph para compartir en redes sociales como Facebook */}
+            <meta property="og:title" content="InikCamper - Alquiler de autocaravanas en Gran Canaria" />
+            <meta property="og:description" content="Alquiler de autocaravanas y furgonetas camper en Gran Canaria. Descubre la libertad de viajar con InikCamper." />
+            <meta property="og:url" content="https://inikcamper.es/" />
+            <meta property="og:type" content="website" />
+         </Helmet>
          <header>
             <div className="transparent-header">
-               <div className="container-fluid">
+            <div className="container-fluid">
                   <div className="header-space">
                      <div className="row align-items-center">
                         <div className="col-xl-2 col-8">

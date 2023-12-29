@@ -8,6 +8,18 @@ module.exports = withImages({
 module.exports = {
     reactStrictMode: true,
     env: {
-      BASE_URL: process.env.BASE_URL,
+        BASE_URL: process.env.BASE_URL,
     }
-  }
+}
+
+module.exports = {
+    async redirects() {
+        return [
+            {
+                source: '/:path*',
+                destination: '/:path*',
+                permanent: true,
+            },
+        ];
+    },
+};

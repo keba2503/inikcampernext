@@ -44,7 +44,7 @@ const Footer = () => {
                   <div className="col-lg-3 col-sm-6">
 
                      <div className="widget widget-contact mb-30">
-                        <h4 className="widget-title mb-35">Contacto</h4>
+                        <h1 className="widget-title mb-35">Contacto</h1>
                         <ul>
                            <li className="pb-10">Gran Canaria - España <br /></li>
                            <li><img src="assets/img/icon/footer-icon-1.png" className="img-fluid" alt="icon-img" /><a href="mailto:inikcamper@gmail">inikcamper@gmail.com</a></li>

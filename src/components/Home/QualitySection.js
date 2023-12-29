@@ -6,7 +6,7 @@ export const Servicios = (props) => {
         <div id='services' className='text-center'>
             <div className='container'>
                 <div className='section-title'>
-                    <h2>Nuestros servicios</h2><br/>
+                    <h1>Nuestros servicios</h1><br/>
 
                 </div>
                 <div className='row'>

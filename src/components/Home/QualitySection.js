@@ -6,10 +6,10 @@ export const Servicios = (props) => {
         <div id='services' className='text-center'>
             <div className='container'>
                 <div className='section-title'>
-                    <h1>Nuestros servicios</h1><br/>
+                    <h2>Nuestros servicios</h2><br/>
 
                 </div>
-                <div className='row'>
+                <div className='row'>F
                     {props.data
                         ? props.data.map((d, i) => (
                             <div key={`${d.name}-${i}`} className='col-md-4'>

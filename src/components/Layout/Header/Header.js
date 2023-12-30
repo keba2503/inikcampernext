@@ -40,20 +40,21 @@ const Header = () => {
          </Head>
          <Helmet>
             <link rel="icon" type="image/png" href="/assets/img/icon/camper-van.png"/>
-            {/* Metaetiquetas para SEO */}
-            <meta name="description" content="Explora Gran Canaria con InikCamper. Alquiler de autocaravanas y furgonetas con servicios de camperización. ¡Tu aventura comienza aquí!"/>
-            <meta property="og:description" content="Descubre la libertad de viajar con InikCamper. ¡Alquila tu autocaravana en Gran Canaria y comienza tu aventura hoy!"/>
-            <meta name="keywords" content="autocaravanas, campervan, furgonetas, camperización, alquiler, Gran Canaria, Las Palmas, viajes, aventuras"/>
-            <meta name="author" content="InikCamper"/>
-            <meta name="robots" content="index, follow"/>
-            <meta name="language" content="es"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-            <link rel="canonical" href="https://inikcamper.es/"/>
-            <meta property="og:title" content="InikCamper - Alquiler de autocaravanas y furgonetas en Gran Canaria"/>
-            <meta property="og:description" content="Alquiler de autocaravanas y furgonetas camper en Gran Canaria. Descubre la libertad de viajar con InikCamper."/>
-            <meta property="og:url" content="https://inikcamper.es/"/>
-            <meta property="og:type" content="website"/>
-            <meta name="google-site-verification" content="CQoAwfZxn41Cja-u5ndPDI6OW_YRBKWZTp5besoARdg"/>
+            <!-- Metaetiquetas para SEO -->
+            <meta name="description" content="Explora Gran Canaria con InikCamper. Alquiler de autocaravanas y furgonetas con servicios de camperización. ¡Tu aventura comienza aquí!" />
+            <meta property="og:description" content="Alquiler de autocaravanas y furgonetas camper en Gran Canaria. Descubre la libertad de viajar con InikCamper." />
+            <meta name="keywords" content="autocaravanas, campervan, furgonetas, camperización, alquiler, Gran Canaria, Las Palmas, viajes, aventuras" />
+            <meta name="author" content="InikCamper" />
+            <meta name="robots" content="index, follow" />
+            <meta name="language" content="es" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="canonical" href="https://inikcamper.es/" />
+            <meta property="og:title" content="InikCamper - Alquiler de autocaravanas y furgonetas en Gran Canaria" />
+            <meta property="og:image" content="https://inikcamper.es/assets/img/slider/inikcamper_bailico.jpg" />
+            <meta property="og:url" content="https://inikcamper.es/" />
+            <meta property="og:type" content="website" />
+            <meta name="google-site-verification" content="CQoAwfZxn41Cja-u5ndPDI6OW_YRBKWZTp5besoARdg" />
+
          </Helmet>
          <header>
             <div className="transparent-header">

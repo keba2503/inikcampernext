@@ -40,7 +40,7 @@ class HomeTwoSlider extends Component {
                         >
                         <SwiperSlide>
                         <div className="single-slider slider-height-2 swiper-slide d-flex align-items-center" data-swiper-autoplay="10000">
-                            <div className="slide-bg" style={{ backgroundImage:`url(${'assets/img/slider/slider-3.jpg'})`}}></div>
+                            <div className="slide-bg" style={{ backgroundImage:`url(${'assets/img/slider/inikcamper_cocina.jpg'})`}}></div>
                             <div className="container">
                                 <div className="row">
                                     <div className="col-lg-12">
@@ -62,7 +62,7 @@ class HomeTwoSlider extends Component {
 
                         <SwiperSlide>
                         <div className="single-slider slider-height-2 swiper-slide d-flex align-items-center" data-swiper-autoplay="10000">
-                            <div className="slide-bg" style={{ backgroundImage:`url(${'assets/img/slider/slider-2.jpg'})`}}></div>
+                            <div className="slide-bg" style={{ backgroundImage:`url(${'assets/img/slider/inikcamper_salon.jpg'})`}}></div>
                             <div className="container">
                                 <div className="row">
                                     <div className="col-lg-12">
@@ -84,7 +84,7 @@ class HomeTwoSlider extends Component {
 
                         <SwiperSlide>
                         <div className="single-slider slider-height-2 swiper-slide d-flex align-items-center" data-swiper-autoplay="10000">
-                            <div className="slide-bg" style={{ backgroundImage:`url(${'assets/img/slider/slider-1.jpg'})`}}></div>
+                            <div className="slide-bg" style={{ backgroundImage:`url(${'assets/img/slider/inikcamper_bailico.jpg'})`}}></div>
                             <div className="container">
                                 <div className="row">
                                     <div className="col-lg-12">

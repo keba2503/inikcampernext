@@ -41,7 +41,10 @@ class HomeSlider extends Component {
                         >
                             <SwiperSlide>
                                 <div className="single-slider slider-height swiper-slide" data-swiper-autoplay="10000">
-                                    <div className="slide-bg" style={{ backgroundImage: `url(${'assets/img/slider/slider-1.jpg'})` }}></div>
+                                    <div className="slide-bg"
+                                         style={{backgroundImage: `url(${'assets/img/slider/inikcamper_bailico.jpg'})`}}>
+                                        <img src="assets/img/slider/inikcamper_bailico.jpg" alt="Furgoneta Inikcamper en Bailico" style={{display: 'none'}}/>
+                                    </div>
                                     <div className="container">
                                         <div className="row">
                                             <div className="col-lg-12">
@@ -62,7 +65,9 @@ class HomeSlider extends Component {
 
                             <SwiperSlide>
                                 <div className="single-slider slider-height swiper-slide" data-swiper-autoplay="10000">
-                                    <div className="slide-bg" style={{ backgroundImage: `url(${'assets/img/slider/slider-2.jpg'})` }}></div>
+                                    <div className="slide-bg"style={{backgroundImage: `url(${'assets/img/slider/inikcamper_salon.jpg'})`}}>
+                                        <img src="assets/img/slider/inikcamper_salon.jpg" alt="Salón de furgonetea de InikCamper" style={{display: 'none'}}/>
+                                    </div>
                                     <div className="container">
                                         <div className="row">
                                             <div className="col-lg-12">
@@ -82,7 +87,9 @@ class HomeSlider extends Component {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="single-slider slider-height swiper-slide" data-swiper-autoplay="10000">
-                                    <div className="slide-bg" style={{ backgroundImage: `url(${'assets/img/slider/slider-3.jpg'})` }}></div>
+                                    <div className="slide-bg" style={{backgroundImage: `url(${'assets/img/slider/inikcamper_cocina.jpg'})`}}>
+                                        <img src="assets/img/slider/inikcamper_cocina.jpg" alt="Cocina de furgoneta de InikCamper" style={{display: 'none'}}/>
+                                    </div>
                                     <div className="container">
                                         <div className="row">
                                             <div className="col-lg-12">
@@ -102,7 +109,9 @@ class HomeSlider extends Component {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="single-slider slider-height swiper-slide" data-swiper-autoplay="10000">
-                                    <div className="slide-bg" style={{ backgroundImage: `url(${'assets/img/slider/slider-4.jpg'})` }}></div>
+                                    <div className="slide-bg" style={{backgroundImage: `url(${'assets/img/slider/inikcamper_playa_vargas.jpg'})`}}>
+                                        <img src="assets/img/slider/inikcamper_playa_vargas.jpg" alt="Playa Vargas con nuestra furgonerta Inikcamper" style={{display: 'none'}}/>
+                                    </div>
                                     <div className="container">
                                         <div className="row">
                                             <div className="col-lg-12">

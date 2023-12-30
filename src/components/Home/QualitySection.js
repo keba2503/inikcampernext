@@ -9,7 +9,7 @@ export const Servicios = (props) => {
                     <h2>Nuestros servicios</h2><br/>
 
                 </div>
-                <div className='row'>F
+                <div className='row'>
                     {props.data
                         ? props.data.map((d, i) => (
                             <div key={`${d.name}-${i}`} className='col-md-4'>

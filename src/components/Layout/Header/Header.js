@@ -47,7 +47,7 @@ const Header = () => {
                 <meta name="robots" content="index, follow"/>
                 <meta name="language" content="es"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <link rel="canonical" href="https://inikcamper.es/"/>
+                <link rel="canonical" href="https://inikcamper.es"/>
                 <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:site" content="@inikcamper"/>
                 <meta property="og:title" content="InikCamper - Alquiler de autocaravanas y furgonetas en Gran Canaria"/>

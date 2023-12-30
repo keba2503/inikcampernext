@@ -40,7 +40,6 @@ const Header = () => {
          </Head>
          <Helmet>
             <link rel="icon" type="image/png" href="/assets/img/icon/camper-van.png"/>
-            <!-- Metaetiquetas para SEO -->
             <meta name="description" content="Explora Gran Canaria con InikCamper. Alquiler de autocaravanas y furgonetas con servicios de camperización. ¡Tu aventura comienza aquí!" />
             <meta property="og:description" content="Alquiler de autocaravanas y furgonetas camper en Gran Canaria. Descubre la libertad de viajar con InikCamper." />
             <meta name="keywords" content="autocaravanas, campervan, furgonetas, camperización, alquiler, Gran Canaria, Las Palmas, viajes, aventuras" />

@@ -1,6 +1,3 @@
 User-agent: *
 Disallow:
-
 Sitemap: https://inikcamper.es/sitemap.xml
-Sitemap: https://inikcamper.es/sitemap_index.xml
-Sitemap: https://inikcamper.es/sitemap.xml.gz

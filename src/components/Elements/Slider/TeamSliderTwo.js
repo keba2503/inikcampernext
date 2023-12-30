@@ -42,7 +42,7 @@ class TeamSliderTwo extends Component {
 
                                 </div>
                                 <div className="kteam-text text-center">
-                                    <h4 className="kteam-title"><Link href="/team-details"><a>Isabel Soler</a></Link></h4>
+                                    <h4 className="kteam-title">Isabel Soler</h4>
                                     <span className="uppercase">Co-funder Administracion</span>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@ class TeamSliderTwo extends Component {
 
                                 </div>
                                 <div className="kteam-text text-center">
-                                    <h4 className="kteam-title"><Link href="/team-details"><a>Nauzet Soler</a></Link></h4>
+                                    <h4 className="kteam-title">Nauzet Soler</h4>
                                     <span className="uppercase">-</span>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@ class TeamSliderTwo extends Component {
 
                                 </div>
                                 <div className="kteam-text text-center">
-                                    <h4 className="kteam-title"><Link href="/team-details"><a>Iria Soler</a></Link></h4>
+                                    <h4 className="kteam-title">Iria Soler</h4>
                                     <span className="uppercase">-</span>
                                 </div>
                             </div>
@@ -75,10 +75,9 @@ class TeamSliderTwo extends Component {
                             <div className="kteam swiper-slide mb-30">
                                 <div className="kteam-img">
                                     <img src="assets/img/team/team-img-1.jpg" className="img-fluid" alt="team-img" />
-
                                 </div>
                                 <div className="kteam-text text-center">
-                                    <h4 className="kteam-title"><Link href="/team-details"><a>Karen Borrero</a></Link></h4>
+                                    <h4 className="kteam-title">Karen Borrero</h4>
                                     <span className="uppercase">Co-Funder Informática</span>
                                 </div>
                             </div>

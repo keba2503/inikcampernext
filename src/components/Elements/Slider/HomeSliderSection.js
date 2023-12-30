@@ -37,8 +37,8 @@ class HomeSlider extends Component {
                             <SwiperSlide>
                                 <div className="single-slider slider-height swiper-slide" data-swiper-autoplay="10000">
                                     <div className="slide-bg"
-                                         style={{backgroundImage: `url(${'assets/img/slider/inikcamper_bailico.jpg'})`}}>
-                                        <img src="assets/img/slider/inikcamper_bailico.jpg" alt="Furgoneta Inikcamper en Bailico" style={{display: 'none'}}/>
+                                         style={{backgroundImage: `url(${'assets/img/slider/inikcamper_bailico.webp'})`}}>
+                                        <img src="assets/img/slider/inikcamper_bailico.webp" alt="Furgoneta Inikcamper en Bailico" style={{display: 'none'}}/>
                                     </div>
                                     <div className="container">
                                         <div className="row">
@@ -58,8 +58,8 @@ class HomeSlider extends Component {
 
                             <SwiperSlide>
                                 <div className="single-slider slider-height swiper-slide" data-swiper-autoplay="10000">
-                                    <div className="slide-bg" style={{backgroundImage: `url(${'assets/img/slider/inikcamper_salon.jpg'})`}}>
-                                        <img src="assets/img/slider/inikcamper_salon.jpg" alt="Salón de furgonetea de InikCamper" style={{display: 'none'}}/>
+                                    <div className="slide-bg" style={{backgroundImage: `url(${'assets/img/slider/inikcamper_salon.webp'})`}}>
+                                        <img src="assets/img/slider/inikcamper_salon.webp" alt="Salón de furgonetea de InikCamper" style={{display: 'none'}}/>
                                     </div>
                                     <div className="container">
                                         <div className="row">
@@ -78,8 +78,8 @@ class HomeSlider extends Component {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="single-slider slider-height swiper-slide" data-swiper-autoplay="10000">
-                                    <div className="slide-bg" style={{backgroundImage: `url(${'assets/img/slider/inikcamper_cocina.jpg'})`}}>
-                                        <img src="assets/img/slider/inikcamper_cocina.jpg" alt="Cocina de furgoneta de InikCamper" style={{display: 'none'}}/>
+                                    <div className="slide-bg" style={{backgroundImage: `url(${'assets/img/slider/inikcamper_cocina.webp'})`}}>
+                                        <img src="assets/img/slider/inikcamper_cocina.webp" alt="Cocina de furgoneta de InikCamper" style={{display: 'none'}}/>
                                     </div>
                                     <div className="container">
                                         <div className="row">
@@ -97,8 +97,8 @@ class HomeSlider extends Component {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="single-slider slider-height swiper-slide" data-swiper-autoplay="10000">
-                                    <div className="slide-bg" style={{backgroundImage: `url(${'assets/img/slider/inikcamper_playa_vargas.png'})`}}>
-                                        <img src="assets/img/slider/inikcamper_playa_vargas.png" alt="Playa Vargas con nuestra furgonerta Inikcamper" style={{display: 'none'}}/>
+                                    <div className="slide-bg" style={{backgroundImage: `url(${'assets/img/slider/inikcamper_playa_vargas.webp'})`}}>
+                                        <img src="assets/img/slider/inikcamper_playa_vargas.webp" alt="Playa Vargas con nuestra furgonerta Inikcamper" style={{display: 'none'}}/>
                                     </div>
                                     <div className="container">
                                         <div className="row">

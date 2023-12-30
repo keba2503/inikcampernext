@@ -49,6 +49,9 @@ const Header = () => {
                 <link rel="canonical" href="https://inikcamper.es"/>
                 <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:site" content="@inikcamper"/>
+                <meta name="twitter:image" content="https://inikcamper.es/assets/img/slider/inikcamper_bailico.jpg"/>
+                <meta name="twitter:title" content="InikCamper - Alquiler de Autocaravanas en Gran Canaria"/>
+                <meta name="twitter:description" content="Explora Gran Canaria con InikCamper. Alquiler de autocaravanas y furgonetas con servicios de camperización. ¡Tu aventura comienza aquí!"/>
                 <meta property="og:title" content="InikCamper - Alquiler de autocaravanas y furgonetas en Gran Canaria"/>
                 <meta property="og:image" content="https://inikcamper.es/assets/img/slider/inikcamper_bailico.jpg"/>
                 <meta property="og:url" content="https://inikcamper.es/"/>

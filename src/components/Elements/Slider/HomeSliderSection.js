@@ -28,16 +28,11 @@ class HomeSlider extends Component {
                                     slidesPerView: 1,
                                 }
                             }}
-                            pagination={{
-                                clickable: true,
-                                el: '.slider-paginations',
-                            }}
                             autoplay={{
                                 delay: 3000,
                                 disableOnInteraction: true
                             }}
                             pagination={{ clickable: true }}
-
                         >
                             <SwiperSlide>
                                 <div className="single-slider slider-height swiper-slide" data-swiper-autoplay="10000">
@@ -49,40 +44,36 @@ class HomeSlider extends Component {
                                         <div className="row">
                                             <div className="col-lg-12">
                                                 <div className="kslider z-index">
-                                                    <h5 className="kslider--subtitle mb-25" data-animation="fadeInUp" data-delay="0.3s">En tus vacaciones sin preocupaciones tendras: <br/> KAYAK, SURF, CICLISMO, TOURS Y MÁS...                                                 </h5>
-                                                    <h2 className="kslider--title mb-40" data-animation="fadeInUp" data-delay="0.5s">Experiencias <br /></h2>
-                                                    <div className="kslider--btn" data-animation="fadeInUp" data-delay="0.7s">
-                                                        <Link href="/service"><a className="theme-btn">Más información</a></Link>
-                                                    </div>
+                                                    <h5 className="kslider--subtitle mb-25" data-animation="fadeInUp" data-delay="0.3s">
+                                                        En tus vacaciones sin preocupaciones tendras: <br/> KAYAK, SURF, CICLISMO, TOURS Y MÁS...
+                                                    </h5>
+                                                    <h2 className="kslider--title mb-40" data-animation="fadeInUp" data-delay="0.5s">Experiencias <br/>
+                                                    </h2>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="slide-shape shape-1"><img src="assets/img/slider/slider-shape-1.png" className="img-fluid" alt="shape-img" /></div>
-                                    <div className="slide-shape shape-2"><img src="assets/img/slider/slider-shape-2.png" className="img-fluid" alt="shape-img"/></div>
                                 </div>
                             </SwiperSlide>
 
                             <SwiperSlide>
                                 <div className="single-slider slider-height swiper-slide" data-swiper-autoplay="10000">
-                                    <div className="slide-bg"style={{backgroundImage: `url(${'assets/img/slider/inikcamper_salon.jpg'})`}}>
+                                    <div className="slide-bg" style={{backgroundImage: `url(${'assets/img/slider/inikcamper_salon.jpg'})`}}>
                                         <img src="assets/img/slider/inikcamper_salon.jpg" alt="Salón de furgonetea de InikCamper" style={{display: 'none'}}/>
                                     </div>
                                     <div className="container">
                                         <div className="row">
                                             <div className="col-lg-12">
                                                 <div className="kslider z-index">
-                                                    <h5 className="kslider--subtitle mb-25" data-animation="fadeInUp" data-delay="0.3s">En tus vacaciones sin preocupaciones tendras: <br/> ESPACIO Y COMODIDAD</h5>
-                                                    <h2 className="kslider--title mb-40" data-animation="fadeInUp" data-delay="0.5s">Confort <br /></h2>
-                                                    <div className="kslider--btn" data-animation="fadeInUp" data-delay="0.7s">
-                                                        <Link href="/service"><a className="theme-btn">Más información</a></Link>
-                                                    </div>
+                                                    <h5 className="kslider--subtitle mb-25" data-animation="fadeInUp" data-delay="0.3s">
+                                                        En tus vacaciones sin preocupaciones tendras: <br/> ESPACIO Y COMODIDAD
+                                                    </h5>
+                                                    <h2 className="kslider--title mb-40" data-animation="fadeInUp" data-delay="0.5s">Confort <br/>
+                                                    </h2>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="slide-shape shape-1"><img src="assets/img/slider/slider-shape-1.png" className="img-fluid" alt="shape-img" /></div>
-                                    <div className="slide-shape shape-2"><img src="assets/img/slider/slider-shape-2.png" className="img-fluid" alt="shape-img"/></div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
@@ -94,45 +85,37 @@ class HomeSlider extends Component {
                                         <div className="row">
                                             <div className="col-lg-12">
                                                 <div className="kslider z-index">
-                                                    <h5 className="kslider--subtitle mb-25" data-animation="fadeInUp" data-delay="0.3s">En tus vacaciones sin preocupaciones tendras: <br/> PLANIFICADO POR NOSOTROS PARA TI  <br/> </h5>
-                                                    <h2 className="kslider--title mb-40" data-animation="fadeInUp" data-delay="0.5s">Momentos <br /></h2>
-                                                    <div className="kslider--btn" data-animation="fadeInUp" data-delay="0.7s">
-                                                        <Link href="/service"><a className="theme-btn">Más información</a></Link>
-                                                    </div>
+                                                    <h5 className="kslider--subtitle mb-25" data-animation="fadeInUp" data-delay="0.3s">En tus vacaciones sin preocupaciones tendras: <br/> PLANIFICADO POR NOSOTROS PARA TI <br/>
+                                                    </h5>
+                                                    <h2 className="kslider--title mb-40" data-animation="fadeInUp" data-delay="0.5s">Momentos <br/>
+                                                    </h2>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="slide-shape shape-1"><img src="assets/img/slider/slider-shape-1.png" className="img-fluid" alt="shape-img" /></div>
-                                    <div className="slide-shape shape-2"><img src="assets/img/slider/slider-shape-2.png" className="img-fluid" alt="shape-img"/></div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="single-slider slider-height swiper-slide" data-swiper-autoplay="10000">
-                                    <div className="slide-bg" style={{backgroundImage: `url(${'assets/img/slider/inikcamper_playa_vargas.jpg'})`}}>
-                                        <img src="assets/img/slider/inikcamper_playa_vargas.jpg" alt="Playa Vargas con nuestra furgonerta Inikcamper" style={{display: 'none'}}/>
+                                    <div className="slide-bg" style={{backgroundImage: `url(${'assets/img/slider/inikcamper_playa_vargas.png'})`}}>
+                                        <img src="assets/img/slider/inikcamper_playa_vargas.png" alt="Playa Vargas con nuestra furgonerta Inikcamper" style={{display: 'none'}}/>
                                     </div>
                                     <div className="container">
                                         <div className="row">
                                             <div className="col-lg-12">
                                                 <div className="kslider z-index">
-                                                    <h5 className="kslider--subtitle mb-25" data-animation="fadeInUp" data-delay="0.3s">En tus vacaciones sin preocupaciones tendras: <br/>PARA TUS OCASIONES ESPECIALES</h5>
-                                                    <h2 className="kslider--title mb-40" data-animation="fadeInUp" data-delay="0.5s">Picnics <br /></h2>
-                                                    <div className="kslider--btn" data-animation="fadeInUp" data-delay="0.7s">
-                                                        <Link href="/service"><a className="theme-btn">Más información</a></Link>
-                                                    </div>
+                                                    <h5 className="kslider--subtitle mb-25" data-animation="fadeInUp" data-delay="0.3s">En tus vacaciones sin preocupaciones tendras: <br/>PARA TUS OCASIONES ESPECIALES
+                                                    </h5>
+                                                    <h2 className="kslider--title mb-40" data-animation="fadeInUp" data-delay="0.5s">Picnics <br/>
+                                                    </h2>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="slide-shape shape-1"><img src="assets/img/slider/slider-shape-1.png" className="img-fluid" alt="shape-img" /></div>
-                                    <div className="slide-shape shape-2"><img src="assets/img/slider/slider-shape-2.png" className="img-fluid" alt="shape-img"/></div>
                                 </div>
                             </SwiperSlide>
-
                         </Swiper>
                     </div>
-
                     <div className="slider-paginations slide-dots"></div>
                 </div>
             </section>

@@ -354,15 +354,18 @@ label {
 
 //custom swipper dots
 
-div.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+div.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   width: inherit;
   position: absolute;
-  top: 51.5%;
-  right: 21.5%;
+  top: auto;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 9999;
-  left: auto;
-  bottom: auto;
-  width: 20px;
+  width: auto;
   @include mq(lg) {
     right: 50px;
   }
@@ -374,12 +377,13 @@ div.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.s
   }
 }
 
-div.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+div.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   display: inline-block;
   margin: 0px 5px;
   padding: 0px;
-  height: 11px;
-  width: 11px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   border: 2px solid #7a7b7e;
   display: inline-block;
@@ -393,6 +397,7 @@ div.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .s
     border-color: $white-color;
   }
 }
+
 
 div.swiper-fade .swiper-slide .swiper-slide {
   pointer-events: auto;

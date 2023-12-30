@@ -20,7 +20,7 @@ class Project extends Component {
                     <div className="row">
                         <div className="col-md-8">
                             <div className="section-title-wrapper mb-45">
-                                <a href="/gallery"><h1 className="section-subtitle mb-20">Nuestra Galeria - Recuerdos que perduran</h1></a>
+                                <a href="/gallery"><h2 className="section-subtitle mb-20">Nuestra Galeria - Recuerdos que perduran</h2></a>
                             </div>
                         </div>
                         <div className="col-md-4">

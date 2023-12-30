@@ -36,12 +36,12 @@ const Header = () => {
       <React.Fragment>
          <Head>
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-            <title>InikCamper – Alquiler de autocaravanas, Campervan, camper, furgonetas</title>
+            <title>InikCamper - Alquiler de autocaravanas y furgonetas en Gran Canaria</title>
          </Head>
          <Helmet>
             <link rel="icon" type="image/png" href="/assets/img/icon/camper-van.png"/>
             {/* Metaetiquetas para SEO */}
-            <meta name="description" content="Descubre la libertad de explorar Gran Canaria con InikCamper. Alquiler de autocaravanas y furgonetas camper con servicios de camperización. ¡Tu aventura comienza aquí!"/>
+            <meta name="description" content="Explora Gran Canaria con InikCamper. Alquiler de autocaravanas y furgonetas con servicios de camperización. ¡Tu aventura comienza aquí!"/>
             <meta property="og:description" content="Descubre la libertad de viajar con InikCamper. ¡Alquila tu autocaravana en Gran Canaria y comienza tu aventura hoy!"/>
             <meta name="keywords" content="autocaravanas, campervan, furgonetas, camperización, alquiler, Gran Canaria, Las Palmas, viajes, aventuras"/>
             <meta name="author" content="InikCamper"/>
@@ -49,7 +49,7 @@ const Header = () => {
             <meta name="language" content="es"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <link rel="canonical" href="https://inikcamper.es/"/>
-            <meta property="og:title" content="InikCamper - Alquiler de autocaravanas en Gran Canaria"/>
+            <meta property="og:title" content="InikCamper - Alquiler de autocaravanas y furgonetas en Gran Canaria"/>
             <meta property="og:description" content="Alquiler de autocaravanas y furgonetas camper en Gran Canaria. Descubre la libertad de viajar con InikCamper."/>
             <meta property="og:url" content="https://inikcamper.es/"/>
             <meta property="og:type" content="website"/>

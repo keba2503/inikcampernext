@@ -45,8 +45,6 @@ export default () => (
                                 <div className="kproject-text kproject-text-2">
                                     <div className="kproject-text-content">
                                         <span></span>
-                                        <h5 className="kproject-text-title"><Link href="/gallery"><a>Detalle</a></Link>
-                                        </h5>
                                     </div>
                                     <div className="kproject-text-icon">
                                         <Link href="/gallery"><a><i><FontAwesomeIcon

@@ -2,11 +2,11 @@ import mysql from 'mysql2/promise';
 
 export async function getDatos() {
     const connection = await mysql.createConnection({
-        host: '5.22.216.113',
-        user: 'inikApi',
-        password: '2015inik',
-        port: 3306,
-        database: 'inikApi',
+        host: process.env.DB_HOST,
+        user: process.env.DB_USER,
+        password: process.env.DB_PASSWORD,
+        port: process.env.DB_PORT,
+        database: process.env.DB_DATABASE,
     });
 
     const [rows] = await connection.execute('SELECT * FROM guide_user');
@@ -20,9 +20,9 @@ export default async function handler(req, res) {
             res.status(200).json(datos);
         } catch (error) {
             console.error(error);
-            res.status(500).json({message: 'Internal Server Error'});
+            res.status(500).json({ message: 'Internal Server Error' });
         }
     } else {
-        res.status(405).json({message: 'Method Not Allowed'});
+        res.status(405).json({ message: 'Method Not Allowed' });
     }
 }

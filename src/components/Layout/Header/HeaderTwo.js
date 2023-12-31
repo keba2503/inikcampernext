@@ -5,7 +5,6 @@ import Head from 'next/head';
 import BurgerMenusTwoo from './BurgerMenusTwoo'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import HeaderTop from './HeaderTop';
-import HeaderSearch from './HeaderSearch';
 
 const HeaderTwo = () => {
 
@@ -91,10 +90,6 @@ const HeaderTwo = () => {
                                           </li>
                                        </ul>
                                     </nav>
-                                </div>
-                                <div className="side-menu-icon d-xl-none text-end">
-                                    <a className="search-btn nav-search search-trigger" href="#!" onClick={() => {setSearchOpen(!searchOpen)}}><i><FontAwesomeIcon icon={['fas', 'search']} /></i></a>
-                                    <button className="side-toggle side-toggle2" onClick={() => {setMenuOpen(!menuOpen)}}><i><FontAwesomeIcon icon={['fas', 'bars']} /></i></button>
                                 </div>
                             </div>
                             <div className="col-xl-4 d-none d-xl-block">

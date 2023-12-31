@@ -4,7 +4,6 @@ import {useRouter} from 'next/router';
 import Head from 'next/head';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import BurgerMenus from './BurgerMenus';
-import HeaderSearch from './HeaderSearch';
 import {Helmet} from 'react-helmet';
 
 
@@ -95,9 +94,6 @@ const Header = () => {
                                         </nav>
                                     </div>
                                     <div className="side-menu-icon d-xl-none text-end">
-                                        <a className="search-btn nav-search search-trigger" href="#!" onClick={() => {
-                                            setSearchOpen(!searchOpen)
-                                        }}><i><FontAwesomeIcon icon={['fas', 'search']}/></i></a>
                                         <button className="side-toggle" onClick={() => {
                                             setMenuOpen(!menuOpen)
                                         }}><i><FontAwesomeIcon icon={['fas', 'bars']}/></i></button>
@@ -111,11 +107,6 @@ const Header = () => {
                                             <a href="https://www.twitter.com/inikcamper" target="_blank"><i><FontAwesomeIcon icon={['fab', 'twitter']}/></i></a>
                                             <a href="https://www.facebook.com/InikCamper-113925204533049" target="_blank"><i><FontAwesomeIcon icon={['fab', 'facebook']}/></i></a>
                                         </div>
-                                        <div className="header-search">
-                                            <a className="search-btn nav-search search-trigger" href="#!" onClick={() => {
-                                                setSearchOpen(!searchOpen)
-                                            }}><i><FontAwesomeIcon icon={['fas', 'search']}/></i></a>
-                                        </div>
                                         <div className="header-btn">
                                         </div>
                                     </div>
@@ -126,7 +117,6 @@ const Header = () => {
                 </div>
                 <BurgerMenus menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
                 <div onClick={() => setMenuOpen(false)} className={menuOpen ? "body-overlay show" : "body-overlay"}></div>
-                <HeaderSearch searchOpen={searchOpen} setSearchOpen={setSearchOpen}/>
                 <div onClick={() => setSearchOpen(false)} className={searchOpen ? "body-overlay show" : "body-overlay"}></div>
             </header>
         </React.Fragment>

@@ -3,7 +3,6 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay, } from 'swiper';
 import { EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
-import Link from 'next/link';
 
 class HomeSlider extends Component {
 

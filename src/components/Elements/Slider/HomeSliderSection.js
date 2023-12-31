@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, } from 'swiper';
-import { EffectFade } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React, {Component} from 'react';
+import {A11y, Autoplay, EffectFade, Navigation, Pagination, Scrollbar,} from 'swiper';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css/bundle';
 
 class HomeSlider extends Component {
@@ -31,7 +30,7 @@ class HomeSlider extends Component {
                                 delay: 3000,
                                 disableOnInteraction: true
                             }}
-                            pagination={{ clickable: true }}
+                            pagination={{clickable: true}}
                         >
                             <SwiperSlide>
                                 <div className="single-slider slider-height swiper-slide" data-swiper-autoplay="10000">
@@ -42,12 +41,8 @@ class HomeSlider extends Component {
                                     <div className="container">
                                         <div className="row">
                                             <div className="col-lg-12">
-                                                <div className="kslider z-index">
-                                                    <h5 className="kslider--subtitle mb-25" data-animation="fadeInUp" data-delay="0.3s">
-                                                        En tus vacaciones sin preocupaciones tendras: <br/> KAYAK, SURF, CICLISMO, TOURS Y MÁS...
-                                                    </h5>
-                                                    <h2 className="kslider--title mb-40" data-animation="fadeInUp" data-delay="0.5s">Experiencias <br/>
-                                                    </h2>
+                                                <div className="kslider z-index text-center">
+                                                    <h2 className="kslider--title__two mb-35" data-animation="fadeInUp" data-delay="0.5s">EXPERIENCIAS</h2>
                                                 </div>
                                             </div>
                                         </div>
@@ -63,12 +58,8 @@ class HomeSlider extends Component {
                                     <div className="container">
                                         <div className="row">
                                             <div className="col-lg-12">
-                                                <div className="kslider z-index">
-                                                    <h5 className="kslider--subtitle mb-25" data-animation="fadeInUp" data-delay="0.3s">
-                                                        En tus vacaciones sin preocupaciones tendras: <br/> ESPACIO Y COMODIDAD
-                                                    </h5>
-                                                    <h2 className="kslider--title mb-40" data-animation="fadeInUp" data-delay="0.5s">Confort <br/>
-                                                    </h2>
+                                                <div className="kslider z-index text-center">
+                                                    <h2 className="kslider--title__two mb-35" data-animation="fadeInUp" data-delay="0.5s">CONFORT</h2>
                                                 </div>
                                             </div>
                                         </div>
@@ -83,11 +74,8 @@ class HomeSlider extends Component {
                                     <div className="container">
                                         <div className="row">
                                             <div className="col-lg-12">
-                                                <div className="kslider z-index">
-                                                    <h5 className="kslider--subtitle mb-25" data-animation="fadeInUp" data-delay="0.3s">En tus vacaciones sin preocupaciones tendras: <br/> PLANIFICADO POR NOSOTROS PARA TI <br/>
-                                                    </h5>
-                                                    <h2 className="kslider--title mb-40" data-animation="fadeInUp" data-delay="0.5s">Momentos <br/>
-                                                    </h2>
+                                                <div className="kslider z-index text-center">
+                                                    <h2 className="kslider--title__two mb-35" data-animation="fadeInUp" data-delay="0.5s">MOMENTOS</h2>
                                                 </div>
                                             </div>
                                         </div>
@@ -102,11 +90,8 @@ class HomeSlider extends Component {
                                     <div className="container">
                                         <div className="row">
                                             <div className="col-lg-12">
-                                                <div className="kslider z-index">
-                                                    <h5 className="kslider--subtitle mb-25" data-animation="fadeInUp" data-delay="0.3s">En tus vacaciones sin preocupaciones tendras: <br/>PARA TUS OCASIONES ESPECIALES
-                                                    </h5>
-                                                    <h2 className="kslider--title mb-40" data-animation="fadeInUp" data-delay="0.5s">Picnics <br/>
-                                                    </h2>
+                                                <div className="kslider z-index text-center">
+                                                    <h2 className="kslider--title__two mb-35" data-animation="fadeInUp" data-delay="0.5s">AVENTURAS</h2>
                                                 </div>
                                             </div>
                                         </div>

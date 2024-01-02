@@ -1,11 +1,12 @@
 // pages/blog.js
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { setArticles } from '../redux/actions/blogActions';
-import BlogPreview from '../components/BlogPreview';
+import React, {useEffect} from 'react';
+import {useDispatch, useSelector} from 'react-redux';
+import {setArticles} from '../redux/actions/blogActions';
+import BlogPreview from '../components/Blog/BlogPreview';
 import Footer from '../components/Layout/Footer/Footer';
 import Header from '../components/Layout/Header/Header';
 import Breadcrumb from "../components/Common/Breadcrumb";
+import PaginationSection from "../components/Common/Pagination";
 
 const BlogPage = () => {
     const dispatch = useDispatch();
@@ -32,14 +33,22 @@ const BlogPage = () => {
 
     return (
         <>
-            <Header />
-            <Breadcrumb pageTitle="Blog" />
-            <div>
-                {articles.map((article) => (
-                    <BlogPreview key={article.id} article={article} />
-                ))}
-            </div>
-            <Footer />
+            <main>
+                <Header/>
+                <Breadcrumb pageTitle="Blog"/>
+                <section className="blog-2 pt-120 pb-115">
+
+                    <div className="container">
+                        <div className='row'>
+                            {articles.map((article) => (
+                                <BlogPreview key={article.id} article={article}/>
+                            ))}
+                        </div>
+                        <PaginationSection/>
+                    </div>
+                </section>
+                <Footer/>
+            </main>
         </>
     );
 };

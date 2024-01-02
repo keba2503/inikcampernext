@@ -28,7 +28,7 @@ const BlogDetail = ({selectedArticle}) => {
                         <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
                             <div className="kblog">
                                 <div className="kblog-img">
-                                    <img src='' alt=''/>
+                                    <img src='https://inikcamper.es/assets/img/about/about-img-1.jpg' alt=''/>
                                 </div>
                                 <div className="kblog-text kblog-text2 kblog-text22">
                                     <div className="kblog-meta pb-10">

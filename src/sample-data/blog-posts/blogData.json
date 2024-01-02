@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Artículo 1",
+    "preview": "Esta es una vista previa del artículo 1.",
+    "content": "Contenido detallado del artículo 1."
+  },
+  {
+    "id": 2,
+    "title": "Artículo 2",
+    "preview": "Esta es una vista previa del artículo 2.",
+    "content": "Contenido detallado del artículo 2."
+  }
+]

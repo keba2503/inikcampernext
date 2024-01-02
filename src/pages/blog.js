@@ -1,27 +1,42 @@
-import React from 'react';
-import Header from '../components/Layout/Header/Header';
+// pages/blog.js
+import React, {useEffect} from 'react';
+import {useDispatch, useSelector} from 'react-redux';
+import {setArticles} from '../redux/actions/blogActions';
+import BlogPreview from '../components/BlogPreview';
 import Footer from '../components/Layout/Footer/Footer';
-import BlogMain from '../components/Blog/BlogMain';
+import Header from '../components/Layout/Header/Header';
+import Breadcrumb from "../components/Common/Breadcrumb";
 
-class BlogPage extends React.Component {
+const BlogPage = () => {
+    const dispatch = useDispatch();
+    const articles = useSelector((state) => state.blogDetails.articles);
 
-    static getInitialProps({store}) {
-    }
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/sample-data/blog-posts/blogData.json');
+                const data = await response.json();
+                dispatch(setArticles(data));
+            } catch (error) {
+                console.error('Error fetching blog data:', error);
+            }
+        };
 
-    constructor(props) {
-        super(props);
-    }
+        fetchData();
+    }, [dispatch]);
 
-    render() {
-        return (
-            <React.Fragment>
-                <Header/>
-                <BlogMain/>
-                <Footer/>
-            </React.Fragment>
-        );
-    }
-}
+    return (
+        <>
+            <Header/>
+            <Breadcrumb pageTitle="Blog"/>
+            <div>
+                {articles.map((article) => (
+                    <BlogPreview key={article.id} article={article}/>
+                ))}
+            </div>
+            <Footer/>
+        </>
+    );
+};
 
 export default BlogPage;
-

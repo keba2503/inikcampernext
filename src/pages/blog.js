@@ -1,7 +1,7 @@
 // pages/blog.js
-import React, {useEffect} from 'react';
-import {useDispatch, useSelector} from 'react-redux';
-import {setArticles} from '../redux/actions/blogActions';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { setArticles } from '../redux/actions/blogActions';
 import BlogPreview from '../components/BlogPreview';
 import Footer from '../components/Layout/Footer/Footer';
 import Header from '../components/Layout/Header/Header';
@@ -14,7 +14,12 @@ const BlogPage = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('/sample-data/blog-posts/blogData.json');
+                const response = await fetch('http://localhost:3000/api/blog');
+
+                if (!response.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+
                 const data = await response.json();
                 dispatch(setArticles(data));
             } catch (error) {
@@ -27,14 +32,14 @@ const BlogPage = () => {
 
     return (
         <>
-            <Header/>
-            <Breadcrumb pageTitle="Blog"/>
+            <Header />
+            <Breadcrumb pageTitle="Blog" />
             <div>
                 {articles.map((article) => (
-                    <BlogPreview key={article.id} article={article}/>
+                    <BlogPreview key={article.id} article={article} />
                 ))}
             </div>
-            <Footer/>
+            <Footer />
         </>
     );
 };

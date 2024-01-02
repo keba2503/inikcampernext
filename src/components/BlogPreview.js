@@ -13,7 +13,7 @@ const BlogPreview = ({ article }) => {
     return (
         <div>
             <h2>{article.title}</h2>
-            <p>{article.preview}</p>
+            <p>{article.text}</p>
             <Link href={`/blog/${article.id}`}>
                 <a onClick={handleClick}>Ver Detalle</a>
             </Link>

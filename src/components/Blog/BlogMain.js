@@ -20,7 +20,6 @@ class BlogMain extends Component {
                                 </div>
                             ))}
                         </div>
-                        <PaginationSection/>
                     </div>
                 </section>
             </main>

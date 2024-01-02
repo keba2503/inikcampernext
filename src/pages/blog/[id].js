@@ -18,11 +18,17 @@ const BlogDetail = ({selectedArticle}) => {
         );
     }
 
+    const paragraphs = selectedArticle.text.split('\n').map((line, index) => (
+        <p key={index} style={{marginBottom: '30px', textAlign: 'justify'}}>
+            {line}
+        </p>
+    ));
+
     return (
         <>
             <Header/>
             <Breadcrumb pageTitle={selectedArticle.title}/>
-            <section className="blog-details-area  pt-120 pb-100">
+            <section className="blog-details-area pt-120 pb-100">
                 <div className="container">
                     <div className="row">
                         <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
@@ -33,15 +39,13 @@ const BlogDetail = ({selectedArticle}) => {
                                 <div className="kblog-text kblog-text2 kblog-text22">
                                     <div className="kblog-meta pb-10">
                                         <p>
-                                            <i><FontAwesomeIcon icon={['fas', 'user-circle']}/></i>
-                                            {' '}
+                                            <i>
+                                                <FontAwesomeIcon icon={['fas', 'user-circle']}/>
+                                            </i>{' '}
                                             {selectedArticle.user}
                                         </p>
                                     </div>
-                                    <p className="mb-20">{selectedArticle.text}</p>
-                                    <p className="mb-20">{selectedArticle.text}</p>
-                                    <p className="mb-20">{selectedArticle.text}</p>
-                                    <p className="mb-20">{selectedArticle.text}</p>
+                                    {paragraphs}
                                 </div>
                             </div>
                         </div>
@@ -53,8 +57,8 @@ const BlogDetail = ({selectedArticle}) => {
     );
 };
 
-export async function getServerSideProps({ params }) {
-    const { id } = params;
+export async function getServerSideProps({params}) {
+    const {id} = params;
 
     try {
         const response = await fetch(`http://localhost:3000/api/blog/${id}`);

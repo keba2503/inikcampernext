@@ -14,9 +14,6 @@ const Footer = () => {
                         <div className="col-lg-4 col-sm-6">
                             <div className="widget mb-30">
 
-                                <div className="footer-logo mb-25">
-                                    <Link href="/"><a><img src="assets/img/logo/logo-white.png" className="img-fluid" alt="footer-logo"/></a></Link>
-                                </div>
                                 <div className="footer-social">
                                     <a href="contact" target="_blank">
                                         <h4 className="widget-title mb-35">Contactanos</h4></a>

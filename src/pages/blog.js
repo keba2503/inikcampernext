@@ -6,7 +6,6 @@ import Footer from '../components/Layout/Footer/Footer';
 import Header from '../components/Layout/Header/Header';
 import Breadcrumb from "../components/Common/Breadcrumb";
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 
 const BlogPage = () => {
     const dispatch = useDispatch();
@@ -34,16 +33,13 @@ const BlogPage = () => {
     return (
         <>
             <Header/>
-            <Breadcrumb pageTitle="Blog"/>
             <section className="blog-2 pt-120 pb-115">
                 <Container>
-                    <Row>
-
+                    <div className="blog-container">
                         {articles.map((article) => (
                             <BlogPreview key={article.id} article={article}/>
                         ))}
-
-                    </Row>
+                    </div>
                 </Container>
             </section>
             <Footer/>

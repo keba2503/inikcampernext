@@ -11,8 +11,11 @@ loadIcons();
 class MyApp extends App {
 
     componentDidMount() {
-        typeof document !== undefined ? require('bootstrap/dist/js/bootstrap') : null
+        if (typeof document !== 'undefined' && document) {
+            require('bootstrap/dist/js/bootstrap');
+        }
     }
+
 
     static async getInitialProps({Component, ctx}) {
         const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};

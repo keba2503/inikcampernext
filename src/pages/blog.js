@@ -14,7 +14,7 @@ const BlogPage = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:3000/api/blog');
+                const response = await fetch('https://inikcamper.es/api/blog');
 
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');

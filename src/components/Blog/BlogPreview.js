@@ -5,7 +5,6 @@ import Link from "next/link";
 
 const BlogPreview = ({article}) => {
     const dispatch = useDispatch();
-
     const handleClick = () => {
         dispatch(setSelectedArticle(article));
     };
@@ -17,7 +16,6 @@ const BlogPreview = ({article}) => {
     });
 
     const firstImageUrl = article.image ? article.image[Object.keys(article.image)[0]] : '';
-
 
     return (
         <>
@@ -49,12 +47,10 @@ const BlogPreview = ({article}) => {
                     </div>
                 </div>
                 <div className="color-overlay"></div>
-
             </div>
         </>
 
-    )
-        ;
+    );
 };
 
 export default BlogPreview;

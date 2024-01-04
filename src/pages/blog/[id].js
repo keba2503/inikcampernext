@@ -41,29 +41,35 @@ const BlogDetail = ({selectedArticle}) => {
         setModalIsOpen(false);
     };
 
+    let images = [];
+
+    if (selectedArticle.image) {
+        images = Object.entries(selectedArticle.image).map(([id, url]) => ({
+            id,
+            url,
+        }));
+    }
+
     return (
         <>
             <Header/>
             <section className="blog-details-area pt-120 pb-100">
                 <div className="container">
                     <div className="blog-detail">
-                        <div className="image-gallery">
-                            <img
-                                src="https://inikcamper.es/assets/img/slider/inikcamper_bailico.jpg"
-                                alt="Imagen 2"
-                                onClick={() => openModal("https://inikcamper.es/assets/img/slider/inikcamper_bailico.jpg")}
-                            />
-                            <img
-                                src="https://picsum.photos/400/400?random=3"
-                                alt="Imagen 3"
-                                onClick={() => openModal("https://picsum.photos/400/400?random=3")}
-                            />
-                            <img
-                                src="https://picsum.photos/400/400?random=4"
-                                alt="Imagen 4"
-                                onClick={() => openModal("https://picsum.photos/400/400?random=4")}
-                            />
+                        <div className="container-gallery">
+                            {images.map((image, index) => (
+                                <div key={index} className={`popup popup-${index + 1}`}>
+                                    <img
+                                        className="img-responsive"
+                                        alt={`Pop Up Gallety ${index + 1}`}
+                                        src={image.url}
+                                        onClick={() => openModal(image.url)}
+                                    />
+                                </div>
+                            ))}
                         </div>
+
+
                         <div className="text-content">
                             <h1>{selectedArticle.title}</h1>
                             <p>{formattedDate}</p>

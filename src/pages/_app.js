@@ -5,6 +5,7 @@ import React from 'react';
 import {createWrapper} from "next-redux-wrapper";
 import store from '../redux/store';
 import {loadIcons} from '../utils/IconLoader';
+import CookieBanner from "../components/Cookies/Cookies";
 
 loadIcons();
 
@@ -26,6 +27,7 @@ class MyApp extends App {
         return (
             <Provider store={store}>
                 <Component {...pageProps}/>
+                <CookieBanner />
             </Provider>
         );
     }

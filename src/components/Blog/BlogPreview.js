@@ -40,7 +40,6 @@ const BlogPreview = ({article}) => {
                     <div className="icon-holder">
                         <span>
                             <i className="fa fa-comment-o"></i>
-
                             <i className="fa fa-calendar"></i>
                             <span>{formattedDate}</span>
                         </span>

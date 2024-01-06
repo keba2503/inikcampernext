@@ -31,34 +31,34 @@ const ProfileBookingPage = () => {
                                 <td>InikDark</td>
                                 <td>€299.99</td>
                                 <td><span className="badge bg-warning">Pendiente</span></td>
-                                <td>Ver detalle</td>
+                                <td><a href='/myBooking'>Ver detalle</a></td>
                             </tr>
                             <tr>
-                                <td>#38594</td>
+                            <td>#38594</td>
                                 <td>05/15/2021</td>
                                 <td>05/15/2021</td>
                                 <td>InikLight</td>
                                 <td>€299.99</td>
                                 <td><span className="badge bg-success">Pagada</span></td>
-                                <td>Ver detalle</td>
+                                <td><a href='/myBooking'>Ver detalle</a></td>
                             </tr>
                             <tr>
-                                <td>#38594</td>
+                            <td>#38594</td>
                                 <td>05/15/2021</td>
                                 <td>05/15/2021</td>
                                 <td>InikDark</td>
                                 <td>€299.99</td>
                                 <td><span className="badge bg-success">Terminada</span></td>
-                                <td>Ver detalle</td>
+                                <td><a href='/myBooking'>Ver detalle</a></td>
                             </tr>
                             <tr>
-                                <td>#38594</td>
+                            <td>#38594</td>
                                 <td>05/15/2021</td>
                                 <td>05/15/2021</td>
                                 <td>Fiat 500L</td>
                                 <td>€299.99</td>
                                 <td><span className="badge bg-danger">Cancelada</span></td>
-                                <td>Ver detalle</td>
+                                <td><a href='/myBooking'>Ver detalle</a></td>
                             </tr>
                             </tbody>
                         </table>

@@ -63,45 +63,43 @@ const RegisterForm = () => {
                         <form onSubmit={handleSubmit}>
                             <div className="fila-arriba">
                                 <div className="contenedor-input">
-                                    <label>
+                                    <label className='labelLogin'>
                                         Nombre <span className="req">*</span>
                                     </label>
-                                    <input type="text" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
+                                    <input className='inputLogin' type="text" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
                                 </div>
 
                                 <div className="contenedor-input">
-                                    <label>
+                                    <label className='labelLogin'>
                                         Apellido <span className="req">*</span>
                                     </label>
-                                    <input type="text" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
+                                    <input className='inputLogin' type="text" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
                                 </div>
                             </div>
                             <div className="contenedor-input">
-                                <label>
+                                <label className='labelLogin'>
                                     Usuario <span className="req">*</span>
                                 </label>
-                                <input type="text" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
+                                <input className='inputLogin' type="text" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
                             </div>
                             <div className="contenedor-input">
-                                <label>
+                                <label className='labelLogin'>
                                     Email <span className="req">*</span>
                                 </label>
-                                <input type="email" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
+                                <input className='inputLogin' type="email" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
                             </div>
                             <div className="contenedor-input">
-                                <label>
+                                <label className='labelLogin'>
                                     Contraseña <span className="req">*</span>
                                 </label>
-                                <input type="password" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
+                                <input className='inputLogin' type="password" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
                             </div>
-
                             <div className="contenedor-input">
-                                <label>
+                                <label className='labelLogin'>
                                     Repetir Contraseña <span className="req">*</span>
                                 </label>
-                                <input type="password" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
+                                <input className='inputLogin' type="password" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
                             </div>
-
                             <input type="submit" className="button button-block" value="Registrarse"/>
                         </form>
                     </div>

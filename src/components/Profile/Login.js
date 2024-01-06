@@ -61,20 +61,20 @@ const LoginForm = () => {
                         <h1>Iniciar Sesión</h1>
                         <form onSubmit={handleSubmit}>
                             <div className="contenedor-input">
-                                <label>
+                                <label className='labelLogin'>
                                     Usuario <span className="req">*</span>
                                 </label>
-                                <input type="text" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
+                                <input className='inputLogin' type="text" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
                             </div>
 
                             <div className="contenedor-input">
-                                <label>
+                                <label className='labelLogin'>
                                     Contraseña <span className="req">*</span>
                                 </label>
-                                <input type="password" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
+                                <input className='inputLogin' type="password" onChange={handleInputChange} onBlur={handleInputBlur} onFocus={handleInputFocus} required/>
                             </div>
-                            <p className="forgot"><a href="#">Se te olvidó la contraseña?</a></p>
-                            <input type="submit" className="button button-block" value="Iniciar Sesión"/>
+                            <p className="forgot"><a href="/emailPassword">Se te olvidó la contraseña?</a></p>
+                            <input  type="submit" className="button button-block" value="Iniciar Sesión"/>
                         </form>
                     </div>
                 </div>

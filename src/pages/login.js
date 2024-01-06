@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from '../components/Layout/Header/Header';
 import Footer from '../components/Layout/Footer/Footer';
-import ProfilePage from "../components/Profile/Profile";
+import LoginForm from "../components/Profile/Login";
 
-class Profile extends React.Component {
+class Login extends React.Component {
 
     static getInitialProps({store}) {
     }
@@ -16,12 +16,12 @@ class Profile extends React.Component {
         return (
             <React.Fragment>
                 <Header/>
-                <ProfilePage/>
+                <LoginForm/>
                 <Footer/>
             </React.Fragment>
         );
     }
 }
 
-export default Profile;
+export default Login;
 

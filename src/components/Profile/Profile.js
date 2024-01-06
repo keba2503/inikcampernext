@@ -5,8 +5,8 @@ const ProfilePage = () => {
         <section className="blog-2 pt-120 pb-115">
             <div className="container-xl px-4 mt-4">
                 <nav className="nav nav-borders">
-                    <a className="nav-link active ms-0" href="https://www.bootdey.com/snippets/view/bs5-edit-profile-account-details" target="__blank">Mi cuenta</a>
-                    <a className="nav-link" href="https://www.bootdey.com/snippets/view/bs5-profile-billing-page" target="__blank">Mis reservas</a>
+                    <a className="nav-link active ms-0" href="/profile">Mi cuenta</a>
+                    <a className="nav-link" href="/booking">Mis reservas</a>
                 </nav>
                 <hr className="mt-0 mb-4"/>
                 <div className="row">

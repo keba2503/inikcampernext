@@ -77,7 +77,7 @@ const BurgerMenus = ({ setMenuOpen, menuOpen }) => {
               </li>
               <li><Link href="/service"><a>Servicios</a></Link></li>
               <li><Link href="/GuieUser"><a>Guia de usuario</a></Link></li>
-              <li><a href="https://www.airbnb.es/rooms/1065005349819753921?source_impression_id=p3_1707250202_UM5cOnOnB5HLJumo" target="_blank">Reservas</a></li>
+              <li><a href="https://airbnb.com/h/inikcamper" target="_blank">Reservas</a></li>
             </ul>
           </div>
           <div className="contact-infos mb-30">

@@ -11,7 +11,6 @@ class GuieMain extends Component {
             <main>
                 <Breadcrumb pageTitle="Guía de usuario"/>
                 <Guie/>
-                <FaqForm/>
             </main>
         );
     }

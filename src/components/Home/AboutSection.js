@@ -1,57 +1,55 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Link from 'next/link';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {useRouter} from "next/router";
+import en from "../Home/locale/en";
+import es from "../Home/locale/es";
 
-class About extends Component {
+const About = () => {
+    const router = useRouter()
+    const {locale} = router;
+    const t = locale === 'en' ? en : es;
 
-    render() {
-
-        return (
-            <section className="about-area pt-120 pb-70 fix">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6">
-                            <div className="kabout-img mb-50 mr-70" data-aos="zoom-out-up" data-swiper-autoplay="10000">
-                                <img src="assets/img/about/about-img-1.jpg" className="img-fluid z-index"
-                                     alt="about-img"/>
-                            </div>
+    return (
+        <section className="about-area pt-120 pb-70 fix">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <div className="kabout-img mb-50 mr-70" data-aos="zoom-out-up" data-swiper-autoplay="10000">
+                            <img src="assets/img/about/about-img-1.jpg" className="img-fluid z-index"
+                                 alt="about-img"/>
                         </div>
-                        <div className="col-lg-6">
-                            <div className="kabout mb-50" data-aos="zoom-out-down" data-swiper-autoplay="10000">
-                                <div className="section-title-wrapper mb-45">
-                                    <h1 className="section-title mb-35">Quienes Somos <br/> InikCamper</h1>
-                                    <p>Somos Aventura, Momentos, Experiencias y Recuerdos.</p>
-                                </div>
-                                <div className="row">
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="kabout mb-50" data-aos="zoom-out-down" data-swiper-autoplay="10000">
+                            <div className="section-title-wrapper mb-45">
+                                <h1 className="section-title mb-35">{t.aboutUs}<br/> InikCamper</h1>
+                                <p>{t.ourValues}.</p>
+                            </div>
+                            <div className="row">
 
-                                </div>
-                                <ul className="mt-20 mb-55">
-                                    <li><i><FontAwesomeIcon icon={['fas', 'check']}/></i> Somos una desconexión de la
-                                        vida diaria para los apasionados de la libertad.
-                                    </li>
-                                    <li><i><FontAwesomeIcon icon={['fas', 'check']}/></i> Planificamos las experiencias
-                                        y aventuras por y para ti.
-                                    </li>
-                                    <li><i><FontAwesomeIcon icon={['fas', 'check']}/></i> Te acompañara nuestra Camper
-                                        Van.
-                                    </li>
-                                    <li><i><FontAwesomeIcon icon={['fas', 'check']}/></i> Te Ofrecemos un servicio
-                                        personalizado y de calidad.
-                                    </li>
-                                    <li><i><FontAwesomeIcon icon={['fas', 'check']}/></i> Te guiamos en tús vacaciones
-                                        para que no tengas preocupaciones.
-                                    </li>
-                                </ul>
-                                <div className="kabout-btn">
-                                    <Link href="/service"><a className="theme-btn border-btn">Más información</a></Link>
-                                </div>
+                            </div>
+                            <ul className="mt-20 mb-55">
+                                <li><i><FontAwesomeIcon icon={['fas', 'check']}/></i> {t.disconnection}
+                                </li>
+                                <li><i><FontAwesomeIcon icon={['fas', 'check']}/></i> {t.planning}
+                                </li>
+                                <li><i><FontAwesomeIcon icon={['fas', 'check']}/></i> {t.camperVan}
+                                </li>
+                                <li><i><FontAwesomeIcon icon={['fas', 'check']}/></i> {t.personalizedService}
+                                </li>
+                                <li><i><FontAwesomeIcon icon={['fas', 'check']}/></i> {t.guideVacations}
+                                </li>
+                            </ul>
+                            <div className="kabout-btn">
+                                <Link href="/service"><a className="theme-btn border-btn">Más información</a></Link>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        );
-    }
+            </div>
+        </section>
+    );
 }
 
 export default About;

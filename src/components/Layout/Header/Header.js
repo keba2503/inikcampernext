@@ -5,15 +5,17 @@ import Head from 'next/head';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import BurgerMenus from './BurgerMenus';
 import {Helmet, HelmetProvider} from 'react-helmet-async';
-
-
+import en from './/locale/en'
+import es from './/locale/es'
 const Header = () => {
 
     const [menuOpen, setMenuOpen] = useState(false)
     const [searchOpen, setSearchOpen] = useState(false)
-
     const router = useRouter()
     const [path, setPath] = useState("")
+    const {locale} = router;
+    const t = locale === 'en' ? en : es;
+
     useEffect(() => {
         setPath(router.pathname)
     }, [router])
@@ -75,23 +77,23 @@ const Header = () => {
                                         <nav id="mobile-menu">
                                             <ul>
                                                 <li className="menu-item-has-children">
-                                                    <Link href="/"><a>Inicio</a></Link>
+                                                    <Link href="/"><a>{t.home}</a></Link>
                                                 </li>
                                                 <li className="menu-item-has-children">
-                                                    <Link href="/"><a>Nosotros</a></Link>
+                                                    <Link href="/"><a>{t.aboutUs}</a></Link>
                                                     <ul className="sub-menu">
-                                                        <li><Link href="/about"><a>Quienes Somos</a></Link></li>
-                                                        <li><Link href="/team"><a>Nuestro Equipo</a></Link></li>
-                                                        <li><Link href="/faq"><a>Preguntas Frecuentes FAQ</a></Link>
+                                                        <li><Link href="/about"><a>{t.whoWeAre}</a></Link></li>
+                                                        <li><Link href="/team"><a>{t.ourTeam}</a></Link></li>
+                                                        <li><Link href="/faq"><a>{t.faq}</a></Link>
                                                         </li>
-                                                        <li><Link href="/blog"><a>Blog</a></Link></li>
+                                                        <li><Link href="/blog"><a>{t.blog}</a></Link></li>
                                                     </ul>
                                                 </li>
                                                 <li className="menu-item-has-children">
-                                                    <Link href="/service"><a>Servicios</a></Link></li>
-                                                <li><Link href="/GuieUser"><a>Guía de usuario</a></Link></li>
+                                                    <Link href="/service"><a>{t.services}</a></Link></li>
+                                                <li><Link href="/GuieUser"><a>{t.userGuide}</a></Link></li>
                                                 <li><a href="https://airbnb.com/h/inikcamper" target="_blank"
-                                                       className="theme-btn theme-btn-small">Mis Reservas</a></li>
+                                                       className="theme-btn theme-btn-small">{t.myBookings}</a></li>
                                             </ul>
                                         </nav>
                                     </div>

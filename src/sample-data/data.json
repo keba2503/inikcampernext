@@ -8,7 +8,6 @@
     "Why": [
       "Somos una desconexión de la vida diaria para los apasionados de la libertad. ",
       "Planificamos las experiencias y aventuras por y para ti."
-     
     ],
     "Why2": [
       "Te acompañara nuestra Camper Van.",
@@ -74,7 +73,6 @@
       "name": "Planificamos tus experiencias",
       "text": "Si deseas que planifiquemos por tí las aventuras que deseas vivir, haremos las reservaciones de las actividades, te guiaremos en todo lo que necesites."
     },
- 
     {
       "icon": "fa fa-life-ring",
       "name": "Actividades acuaticas",
@@ -95,8 +93,39 @@
       "name": "Momentos especiales",
       "text": "Te ofrecemos planificar y darte los necesario para que realices un picni para tus ocasines especiales."
     }
-  
   ],
+    "Services_EN": [
+      {
+        "icon": "fa fa-bus",
+        "name": "Camper Van Rental",
+        "text": "If you wish, you can exclusively rent our Camper Van. Rest assured, it will include everything basic and necessary for you to make the most of your days."
+      },
+      {
+        "icon": "fa fa-bus",
+        "name": "We Plan Your Experiences",
+        "text": "If you prefer us to plan the adventures you want to experience, we will make reservations for activities and guide you in everything you need."
+      },
+      {
+        "icon": "fa fa-life-ring",
+        "name": "Water Activities",
+        "text": "We offer various kits that you can customize to your liking to enjoy water experiences such as kayaking, paddleboarding, beach rackets, snorkeling, among others."
+      },
+      {
+        "icon": "fa fa-bicycle",
+        "name": "Bike Rental",
+        "text": "You can rent bikes with us to enjoy rides or mountain trails. We can also offer you a voucher to use city bikes."
+      },
+      {
+        "icon": "fa fa-paw",
+        "name": "We Are Pet Friendly",
+        "text": "You can enjoy special moments with your pet; they are always welcome."
+      },
+      {
+        "icon": "fa fa-bus",
+        "name": "Special Moments",
+        "text": "We offer to plan and provide everything you need to have a picnic for your special occasions."
+      }
+    ],
   "Testimonials": [
     {
       "img": "img/testimonials/01.jpg",

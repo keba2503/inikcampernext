@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import FooterBottom from './FooterBottom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
+import {useRouter} from "next/router";
 
 const Footer = () => {
+    const router = useRouter()
+    const [path, setPath] = useState("")
+    const {locale} = router;
 
     return (
 
@@ -15,8 +19,14 @@ const Footer = () => {
                             <div className="widget mb-30">
 
                                 <div className="footer-social">
-                                    <a href="contact" target="_blank">
-                                        <h4 className="widget-title mb-35">Contactanos</h4></a>
+                                    {locale === 'en' ? (
+                                        <a href="/contact" target="_blank">
+                                            <h4 className="widget-title mb-35">Contact</h4></a>
+                                    ) : (
+                                        <a href="/contact" target="_blank">
+                                            <h4 className="widget-title mb-35">Contactanos</h4></a>
+                                    )}
+
                                     <a href="https://www.twitter.com/inikcamper" target="_blank"><i><FontAwesomeIcon icon={['fab', 'twitter']}/></i></a>
                                     <a href="https://www.facebook.com/InikCamper-113925204533049" target="_blank"><i><FontAwesomeIcon icon={['fab', 'facebook']}/></i></a>
                                     <a href="https://wa.me/34684198547" target="_blank"><i><FontAwesomeIcon icon={['fab', 'whatsapp']}/></i></a>
@@ -28,12 +38,23 @@ const Footer = () => {
                         <div className="col-lg-2 col-sm-6">
                             <div className="widget mb-30">
                                 <h4 className="widget-title mb-35">Links</h4>
-                                <ul>
-                                    <li><Link href="/service"><a>Servicios</a></Link></li>
-                                    <li><Link href="/about"><a>Equipo</a></Link></li>
-                                    <li><Link href="/booking"><a>Reservas</a></Link></li>
-                                    <li><Link href="/contact"><a>Escribenos - contacto</a></Link></li>
-                                </ul>
+
+                                {locale === 'en' ? (
+                                    <ul>
+                                        <li><Link href="/service"><a>Services</a></Link></li>
+                                        <li><Link href="/about"><a>Team</a></Link></li>
+                                        <li><Link href="/booking"><a>Reservations</a></Link></li>
+                                        <li><Link href="/contact"><a>Write to Us - Contact</a></Link></li>
+                                    </ul>
+                                ) : (
+                                    <ul>
+                                        <li><Link href="/service"><a>Servicios</a></Link></li>
+                                        <li><Link href="/about"><a>Equipo</a></Link></li>
+                                        <li><Link href="/booking"><a>Reservas</a></Link></li>
+                                        <li><Link href="/contact"><a>Escribenos - contacto</a></Link></li>
+                                    </ul>
+                                )}
+
                             </div>
                         </div>
                         <div className="col-lg-3 col-sm-6">

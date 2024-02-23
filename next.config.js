@@ -7,6 +7,10 @@ module.exports = withImages({
 
 module.exports = {
     reactStrictMode: true,
+    i18n: {
+        locales: ['en', 'es'],
+        defaultLocale: 'en',
+    },
     env: {
         BASE_URL: process.env.BASE_URL,
     }

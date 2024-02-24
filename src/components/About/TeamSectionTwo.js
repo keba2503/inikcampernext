@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import dynamic from 'next/dynamic';
 import {useRouter} from "next/router";
-import en from "../Layout/Header/locale/en";
-import es from "../Layout/Header/locale/es";
 
 const TeamSliderTwo = dynamic(() => import('../Elements/Slider/TeamSliderTwo'), {
     ssr: false

@@ -1,36 +1,39 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import BurgerMenus from './BurgerMenus';
-import {Helmet, HelmetProvider} from 'react-helmet-async';
-import en from './/locale/en'
-import es from './/locale/es'
-const Header = () => {
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import LanguageSelector from './LanguageSelector'
+import en from './/locale/en';
+import es from './/locale/es';
 
-    const [menuOpen, setMenuOpen] = useState(false)
-    const [searchOpen, setSearchOpen] = useState(false)
-    const router = useRouter()
-    const [path, setPath] = useState("")
-    const {locale} = router;
+const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [searchOpen, setSearchOpen] = useState(false);
+    const router = useRouter();
+    const [path, setPath] = useState('');
+    const { locale } = router;
     const t = locale === 'en' ? en : es;
 
     useEffect(() => {
-        setPath(router.pathname)
-    }, [router])
+        setPath(router.pathname);
+    }, [router]);
 
     useEffect(() => {
         window.addEventListener('scroll', sticky);
         return () => {
             window.removeEventListener('scroll', sticky);
         };
-    });
+    }, []);
 
     const sticky = (e) => {
         const header = document.querySelector('.transparent-header');
         const scrollTop = window.scrollY;
-        scrollTop >= 1 ? header.classList.add('sticky-header') : header.classList.remove('sticky-header');
+        scrollTop >= 1
+            ? header.classList.add('sticky-header')
+            : header.classList.remove('sticky-header');
     };
 
     return (
@@ -46,7 +49,6 @@ const Header = () => {
                     <meta name="keywords" content="autocaravanas, campervan, furgonetas, camperización, alquiler, Gran Canaria, Las Palmas, viajes, aventuras"/>
                     <meta name="author" content="InikCamper"/>
                     <meta name="robots" content="index, follow"/>
-                    <meta name="language" content="es"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                     <link rel="canonical" href="https://inikcamper.es"/>
                     <meta name="twitter:card" content="summary"/>
@@ -110,6 +112,7 @@ const Header = () => {
                                             <a href="https://www.instagram.com/inikcamper.es" target="_blank"><i><FontAwesomeIcon icon={['fab', 'instagram']}/></i></a>
                                             <a href="https://www.twitter.com/inikcamper" target="_blank"><i><FontAwesomeIcon icon={['fab', 'twitter']}/></i></a>
                                             <a href="https://www.facebook.com/InikCamper-113925204533049" target="_blank"><i><FontAwesomeIcon icon={['fab', 'facebook']}/></i></a>
+                                            <LanguageSelector className='language-selector-container'/>
                                         </div>
                                         <div className="header-btn">
                                         </div>

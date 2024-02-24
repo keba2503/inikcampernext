@@ -103,7 +103,7 @@ export async function getServerSideProps({params}) {
     const {id} = params;
 
     try {
-        const response = await fetch(`https://inikcamper.comapi/blog/${id}`);
+        const response = await fetch(`https://inikcamper.es/api/blog/${id}`);
         const selectedArticle = await response.json();
 
         if (!response.ok) {

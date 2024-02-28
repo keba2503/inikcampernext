@@ -2,13 +2,20 @@ import React from 'react';
 import Link from 'next/link';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {useRouter} from "next/router";
-import en from "../Home/locale/en";
-import es from "../Home/locale/es";
+import en from ".//locale/en";
+import es from ".//locale/es";
+import de from ".//locale/de";
 
 const About = () => {
     const router = useRouter()
     const {locale} = router;
-    const t = locale === 'en' ? en : es;
+    const languages = {
+        en: en,
+        es: es,
+        de: de,
+    };
+
+    const t = languages[locale] || en;
 
     return (
         <section className="about-area pt-120 pb-70 fix">

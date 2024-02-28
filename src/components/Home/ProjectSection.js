@@ -22,13 +22,20 @@ const Project = () => {
                 <div className="row">
                     <div className="col-md-8">
                         <div className="section-title-wrapper mb-45">
-                            {locale === 'en' ? (<a href="/gallery">
-                                <h2 className="section-subtitle mb-20">Our Gallery - Memories that Endure</h2>
-                            </a>) : (
+                            {locale === 'en' ? (
                                 <a href="/gallery">
-                                    <h2 className="section-subtitle mb-20">Nuestra Galeria - Recuerdos que perduran</h2>
+                                    <h2 className="section-subtitle mb-20">Our Gallery - Memories that Endure</h2>
+                                </a>
+                            ) : locale === 'es' ? (
+                                <a href="/gallery">
+                                    <h2 className="section-subtitle mb-20">Nuestra Galería - Recuerdos que perduran</h2>
+                                </a>
+                            ) : (
+                                <a href="/gallery">
+                                    <h2 className="section-subtitle mb-20">Unsere Galerie - Erinnerungen, die anhalten</h2>
                                 </a>
                             )}
+
                         </div>
                     </div>
                     <div className="col-md-4">

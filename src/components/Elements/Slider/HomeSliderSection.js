@@ -2,14 +2,21 @@ import React from 'react';
 import {A11y, Autoplay, EffectFade, Navigation, Pagination, Scrollbar,} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css/bundle';
+import {useRouter} from 'next/router';
 import en from './/../locale/en'
 import es from './/../locale/es'
-import {useRouter} from 'next/router';
+import de from ".//../locale/de";
 
 const HomeSlider = () => {
     const router = useRouter()
-    const {locale} = router;
-    const t = locale === 'en' ? en : es;
+    const { locale } = router;
+    const languages = {
+        en: en,
+        es: es,
+        de: de,
+    };
+
+    const t = languages[locale] || en;
 
     return (
 

@@ -19,9 +19,11 @@ const Map = () => {
                     <br/>
 
                     {locale === 'en' ? (
-                        <h2 className="section-title mb-35">Recommended Map" - Gran Canaria</h2>
-                    ) : (
+                        <h2 className="section-title mb-35">Recommended Map - Gran Canaria</h2>
+                    ) : locale === 'es' ? (
                         <h2 className="section-title mb-35">Mapa Recomendado - Gran Canaria</h2>
+                    ) : (
+                        <h2 className="section-title mb-35">Empfohlene Karte - Gran Canaria</h2>
                     )}
 
 

@@ -6,8 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import BurgerMenus from './BurgerMenus';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import LanguageSelector from './LanguageSelector'
-import en from './/locale/en';
-import es from './/locale/es';
+import en from '../locale/en';
+import es from '../locale/es';
+import de from "../locale/de";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +16,14 @@ const Header = () => {
     const router = useRouter();
     const [path, setPath] = useState('');
     const { locale } = router;
-    const t = locale === 'en' ? en : es;
+    const languages = {
+        en: en,
+        es: es,
+        de: de,
+    };
+
+    const t = languages[locale] || en;
+
 
     useEffect(() => {
         setPath(router.pathname);
@@ -95,7 +103,7 @@ const Header = () => {
                                                     <Link href="/service"><a>{t.services}</a></Link></li>
                                                 <li><Link href="/GuieUser"><a>{t.userGuide}</a></Link></li>
                                                 <li><a href="https://airbnb.com/h/inikcamper" target="_blank"
-                                                       className="theme-btn theme-btn-small">{t.myBookings}</a></li>
+                                                       className="menu-item-has-children">{t.myBookings}</a></li>
                                             </ul>
                                         </nav>
                                     </div>

@@ -8,4 +8,13 @@ export default {
     "services": "Servicios",
     "userGuide": "Guía de Usuario",
     "myBookings": "Reservas",
+    "contactUs": "Contáctanos",
+    "links": "Enlaces",
+    "team": "Equipo",
+    "bookings": "Reservas",
+    "writeUs": "Escríbenos - Contacto",
+    "contact": "Contacto",
+    "location": "Gran Canaria - España",
+    "email": "inikcamper@gmail.com",
+    "phone": "+34-684198547",
 }

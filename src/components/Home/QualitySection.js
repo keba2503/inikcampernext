@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useRouter} from "next/router";
-import en from "../Layout/Header/locale/en";
-import es from "../Layout/Header/locale/es";
+import en from "../Layout/locale/en";
+import es from "../Layout/locale/es";
 
 
 export const Servicios = (props) => {

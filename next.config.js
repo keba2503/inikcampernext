@@ -8,7 +8,7 @@ module.exports = withImages({
 module.exports = {
     reactStrictMode: true,
     i18n: {
-        locales: ['en', 'es'],
+        locales: ['en', 'es', 'de'],
         defaultLocale: 'es',
         localeDetection: false,
     },

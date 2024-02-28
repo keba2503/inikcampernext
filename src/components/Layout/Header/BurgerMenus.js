@@ -2,10 +2,10 @@ import React, {useEffect, useState} from 'react';
 import {useRouter} from 'next/router'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import en from './/locale/en'
-import es from './/locale/es'
+import en from '../locale/en'
+import es from '../locale/es'
 import LanguageSelector from "./LanguageSelector";
-
+import de from "../locale/de";
 
 const BurgerMenus = ({setMenuOpen, menuOpen}) => {
 
@@ -17,7 +17,13 @@ const BurgerMenus = ({setMenuOpen, menuOpen}) => {
     const router = useRouter()
     const [path, setPath] = useState("")
     const {locale} = router;
-    const t = locale === 'en' ? en : es;
+    const languages = {
+        en: en,
+        es: es,
+        de: de,
+    };
+
+    const t = languages[locale] || en;
 
     useEffect(() => {
         setPath(router.pathname)

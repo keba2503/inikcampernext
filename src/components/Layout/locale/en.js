@@ -11,5 +11,14 @@ export default {
     "welcomeMessage": "Welcome to our application!",
     "hello": "Hello, {name}!",
     "goodbye": "Goodbye!",
-    "error": "An error occurred. Please try again later."
+    "error": "An error occurred. Please try again later.",
+    "contactUs": "Contact Us",
+    "links": "Links",
+    "team": "Team",
+    "bookings": "Bookings",
+    "writeUs": "Write Us - Contact",
+    "contact": "Contact",
+    "location": "Gran Canaria - Spain",
+    "email": "inikcamper@gmail.com",
+    "phone": "+34-684198547",
 }

@@ -3,11 +3,22 @@ import FooterBottom from './FooterBottom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import {useRouter} from "next/router";
+import en from "../locale/en";
+import es from "../locale/es";
+import de from "../locale/de";
 
 const Footer = () => {
     const router = useRouter()
     const [path, setPath] = useState("")
     const {locale} = router;
+
+    const languages = {
+        en: en,
+        es: es,
+        de: de,
+    };
+
+    const t = languages[locale] || en;
 
     return (
 
@@ -19,14 +30,8 @@ const Footer = () => {
                             <div className="widget mb-30">
 
                                 <div className="footer-social">
-                                    {locale === 'en' ? (
-                                        <a href="/contact" target="_blank">
-                                            <h4 className="widget-title mb-35">Contact</h4></a>
-                                    ) : (
-                                        <a href="/contact" target="_blank">
-                                            <h4 className="widget-title mb-35">Contactanos</h4></a>
-                                    )}
-
+                                    <a href="/contact" target="_blank">
+                                        <h4 className="widget-title mb-35">{t.contactUs}</h4></a>
                                     <a href="https://www.twitter.com/inikcamper" target="_blank"><i><FontAwesomeIcon icon={['fab', 'twitter']}/></i></a>
                                     <a href="https://www.facebook.com/InikCamper-113925204533049" target="_blank"><i><FontAwesomeIcon icon={['fab', 'facebook']}/></i></a>
                                     <a href="https://wa.me/34684198547" target="_blank"><i><FontAwesomeIcon icon={['fab', 'whatsapp']}/></i></a>
@@ -37,30 +42,19 @@ const Footer = () => {
 
                         <div className="col-lg-2 col-sm-6">
                             <div className="widget mb-30">
-                                <h4 className="widget-title mb-35">Links</h4>
-
-                                {locale === 'en' ? (
-                                    <ul>
-                                        <li><Link href="/service"><a>Services</a></Link></li>
-                                        <li><Link href="/about"><a>Team</a></Link></li>
-                                        <li><Link href="/booking"><a>Reservations</a></Link></li>
-                                        <li><Link href="/contact"><a>Write to Us - Contact</a></Link></li>
-                                    </ul>
-                                ) : (
-                                    <ul>
-                                        <li><Link href="/service"><a>Servicios</a></Link></li>
-                                        <li><Link href="/about"><a>Equipo</a></Link></li>
-                                        <li><Link href="/booking"><a>Reservas</a></Link></li>
-                                        <li><Link href="/contact"><a>Escribenos - contacto</a></Link></li>
-                                    </ul>
-                                )}
-
+                                <h4 className="widget-title mb-35">{t.links}</h4>
+                                <ul>
+                                    <li><Link href="/service"><a>{t.services}</a></Link></li>
+                                    <li><Link href="/about"><a>{t.team}</a></Link></li>
+                                    <li><Link href="/booking"><a>{t.bookings}</a></Link></li>
+                                    <li><Link href="/contact"><a>{t.writeUs}</a></Link></li>
+                                </ul>
                             </div>
                         </div>
                         <div className="col-lg-3 col-sm-6">
 
                             <div className="widget widget-contact mb-30">
-                                <h2 className="widget-title mb-35">Contacto</h2>
+                                <h2 className="widget-title mb-35">{t.contactUs}</h2>
                                 <ul>
                                     <li className="pb-10">Gran Canaria - España <br/></li>
                                     <li>

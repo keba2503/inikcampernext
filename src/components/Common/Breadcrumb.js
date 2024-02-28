@@ -1,8 +1,22 @@
 import React from 'react';
 import Link from 'next/link';
+import {useRouter} from "next/router";
+import en from "../Layout/locale/en";
+import es from "../Layout/locale/es";
+import de from "../Layout/locale/de";
 
 const Breadcrumb = (props) => {
     const {pageTitle} = props;
+    const router = useRouter();
+    const {locale} = router;
+    const languages = {
+        en: en,
+        es: es,
+        de: de,
+    };
+
+    const t = languages[locale] || en;
+
     return (
         <section className="page-title-area breadcrumb-spacing"
                  style={{backgroundImage: `url(${'assets/img/bg/breadcrumb-bg.jpg'})`}}>
@@ -16,7 +30,7 @@ const Breadcrumb = (props) => {
                                     <ul className="trail-items">
                                         <li className="trail-item trail-begin">
                                             <Link href="/" as="/">
-                                                <a><span>Inicio</span></a>
+                                                <a><span>{t.home}</span></a>
                                             </Link>
                                         </li>
                                         <li className="trail-item trail-end">

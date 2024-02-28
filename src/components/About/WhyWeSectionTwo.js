@@ -1,7 +1,19 @@
 import React, {Component} from 'react';
+import {useRouter} from "next/router";
+import en from "./locale/en";
+import es from "./locale/es";
+import de from "./locale/de";
 
-class WhyWeTwo extends Component {
-    render() {
+const WhyWeTwo = () => {
+    const router = useRouter();
+    const {locale} = router;
+    const languages = {
+        en: en,
+        es: es,
+        de: de,
+    };
+
+    const t = languages[locale] || en;
 
         return (
             <section className="why-we bg-grey pt-125 pb-75 position-relative fix">
@@ -15,25 +27,19 @@ class WhyWeTwo extends Component {
                             <div className="choose-left mb-40 mr-xs-0 mr-md-0 mr-lg-0 mr-90" data-aos="fade-up-right"
                                  data-aos-duration="1000">
                                 <div className="section-title-wrapper">
-                                    <h5 className="section-subtitle mb-20">Una Familia</h5>
+                                    <h5 className="section-subtitle mb-20">{t.familySubtitle}</h5>
                                     <h2 className="section-title mb-35"></h2>
                                 </div>
-                                <p>Nosotros somos unos apasionados de la libertad, de hacer planes de vivencias, de
-                                    disfrutar la vida con lo que te da, sin muchos complementos, y de poder trasmitir
-                                    eso a nuestro entorno por el medio que conocemos, que tenemos experiencia y que
-                                    además disfrutamos la “Van Life”..
+                                <p>{t.familyDescription}
                                 </p>
-                                <p>Somos una familia aventurera y emprendedora. Nuestras iniciales conforman unidas el
-                                    nombre de nuestro estupendo equipo " INIK ". Las encargadas de las responsabilidades
-                                    somos las adultas y los encargados de disfrutar al maximo son los pequeños.</p>
+                                <p>{t.familyAdventure}</p>
                             </div>
                         </div>
-
                         <div className="col-xl-6 col-lg-6 col-md-12">
                             <div className="choose-left mb-40 mr-xs-0 mr-md-0 mr-lg-0 mr-90" data-aos="fade-up-right"
                                  data-aos-duration="1000">
                                 <div className="section-title-wrapper">
-                                    <h5 className="section-subtitle mb-20">¿Por que viajar con Nosotros?</h5>
+                                    <h5 className="section-subtitle mb-20">{t.whyTravelWithUsSubtitle}</h5>
                                     <h2 className="section-title mb-35"></h2>
                                 </div>
                                 <img src="assets/img/about/about-img-77.jpeg" className="img-fluid" alt="about-img"/>
@@ -43,7 +49,6 @@ class WhyWeTwo extends Component {
                 </div>
             </section>
         );
-    }
 }
 
 export default WhyWeTwo;

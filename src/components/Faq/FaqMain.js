@@ -1,11 +1,22 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 import Breadcrumb from '../Common/Breadcrumb';
 import FaqAccordion from './FaqAccordion';
 import FaqForm from './FaqFormSection';
+import {useRouter} from "next/router";
+import en from "./locale/en";
+import es from "./locale/es";
+import de from "./locale/de";
 
 
-class FaqMain extends Component {
-    render() {
+const FaqMain = () => {
+        const router = useRouter();
+        const [path, setPath] = useState('');
+        const {locale} = router;
+        const languages = {
+                en: en,
+                es: es,
+                de: de,
+        };
 
         return (
             <main>
@@ -14,7 +25,6 @@ class FaqMain extends Component {
                 <FaqForm/>
             </main>
         );
-    }
 }
 
 export default FaqMain;

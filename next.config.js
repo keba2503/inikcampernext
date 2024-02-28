@@ -10,7 +10,6 @@ module.exports = {
     i18n: {
         locales: ['en', 'es', 'de'],
         defaultLocale: 'es',
-        localeDetection: false,
     },
     env: {
         BASE_URL: process.env.BASE_URL,

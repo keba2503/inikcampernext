@@ -4,6 +4,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import en from './/locale/en'
 import es from './/locale/es'
+import LanguageSelector from "./LanguageSelector";
 
 
 const BurgerMenus = ({setMenuOpen, menuOpen}) => {
@@ -81,6 +82,10 @@ const BurgerMenus = ({setMenuOpen, menuOpen}) => {
                             <li><Link href="/service"><a>{t.services}</a></Link></li>
                             <li><Link href="/GuieUser"><a>{t.userGuide}</a></Link></li>
                             <li><a href="https://airbnb.com/h/inikcamper" target="_blank">{t.myBookings}</a></li>
+                            <br/>
+                            <li className={courses ? "has-droupdown active" : "has-droupdown"}>
+                                <LanguageSelector className='sub-menu'/>
+                            </li>
                         </ul>
                     </div>
                     <div className="contact-infos mb-30">

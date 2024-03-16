@@ -16,7 +16,7 @@ const Reservas = () => {
                         <br/> <br/> <br/> <br/> <br/>
                         <h3>Selecciona los días de tu reserva</h3>
                         <p>Si los días aparecen en gris es que no están disponibles</p>
-                        <p>La estancia mínima es de dos (2) días</p>
+                        <p>La estancia mínima es de tres (3) días</p>
                         <Booking/>
                     </div>
                 </div>

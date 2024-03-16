@@ -102,7 +102,7 @@ const Header = () => {
                                                 <li className="menu-item-has-children">
                                                     <Link href="/service"><a>{t.services}</a></Link></li>
                                                 <li><Link href="/GuieUser"><a>{t.userGuide}</a></Link></li>
-                                                <li><a href="https://airbnb.com/h/inikcamper" target="_blank"
+                                                <li><a href="/reservas" target="_blank"
                                                        className="menu-item-has-children">{t.myBookings}</a></li>
                                             </ul>
                                         </nav>
